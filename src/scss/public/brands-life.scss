@@ -1,0 +1,67 @@
+.brand-stemplan{
+  position:relative;
+  height:450px;
+  overflow:hidden;
+  &>img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:100%;
+  }
+
+.brand-stemplan-title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width:50%;
+    z-index:99;
+    img{
+      width:100%;
+    }
+  }
+}
+.brands-titlebar{
+  line-height: 90px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color:#fff;
+  .brands-items{
+    text-align:center;
+    padding:0;
+    margin:0;
+    li{
+      list-style:none;
+      display:inline-block;
+      padding:0 20px;
+      font-size:14px;
+      &:active{
+        color:#FFA221;
+      }
+    }
+  }
+}
+.brands-waterfall{
+  background-color:#FBFBFB;
+  .waterfall-items{
+    width:calc(100% / 3 - 20px);
+    padding: 0 10px;
+    margin: 10px 0;
+    background-color:#fff;
+  }
+  .waterfall-items-year{
+    padding: 10px 0;
+    font-size:14px;
+    span{
+      color:#FFA221;
+    }
+  }
+  .waterfall-items-images{
+    img{
+      width:100%;
+    }
+  }
+  .waterfall-items-information{
+    font-size:22px;
+  }
+}
