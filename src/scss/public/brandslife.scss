@@ -1,0 +1,106 @@
+.wf-parents{
+  position: relative;
+
+  margin: 0 auto;
+}
+
+.brand-stemplan{
+  position: relative;
+
+  overflow: hidden;
+
+  height: 450px;
+  & > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 100%;
+
+    transform: translate(-50%, -50%);
+  }
+  .brand-stemplan-title{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+
+    max-width: 50%;
+
+    transform: translate(-50%, -50%);
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.brands-titlebar{
+  line-height: 90px;
+
+  border-bottom: 1px solid #E0E0E0;
+  background-color: #FFFFFF;
+  .brands-items{
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    li{
+      font-size: 14px;
+
+      display: inline-block;
+
+      padding: 0 20px;
+
+      list-style: none;
+      &:active{
+        color: #FFA221;
+      }
+    }
+  }
+}
+
+.brands-waterfall{
+  max-width: 1140px;
+  margin: 0 auto;
+.waterfall{
+  display:none;
+  &.open{
+    display:block;
+  }
+}
+  background-color: #FBFBFB;
+  .waterfall-items{
+    float: left;
+
+    // width: 380px;
+    margin: 10px 0;
+    width: calc(100% / 3 - 20px);
+    padding: 0 10px;
+
+    // transition: top .3s,left .3s,width .3s;
+
+    background-color: #FFFFFF;  
+    @media(max-width: $breakpoint-xs-max) {
+        width: calc(100% / 2 - 20px);
+    }
+    @media(max-width: $breakpoint-phone-max) {
+        width: 100%;
+    }
+  }
+  .waterfall-items-year{
+    font-size: 14px;
+
+    padding: 10px 0;
+    span{
+      color: #FFA221;
+    }
+  }
+  .waterfall-items-images{
+    img{
+      width: 100%;
+    }
+  }
+  .waterfall-items-information{
+    font-size: 22px;
+  }
+}
