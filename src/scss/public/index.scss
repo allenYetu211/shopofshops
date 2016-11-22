@@ -1,0 +1,149 @@
+main{
+#carousel-example-generic{
+	.carousel-inner{
+		.item{
+			height:450px;
+			width:100%;
+			overflow:hidden;
+			&>img{
+				height: 100%;
+				width:auto;
+				position:absolute;
+				left:50%;
+				top:50%;
+				max-width:none;
+				transform:translate(-50%,-50%);
+				
+			}
+		}
+	}
+	.carousel-control{
+		position: absolute;
+		right:20px;
+		left:auto;
+		top:40%;
+		z-index:999;
+		width: 60px;
+		height:60px;
+		line-height: 60px;
+		background:rgba(255,255,255,.3);
+		&:hover,&:focus{
+			background:#FF520E;
+			opacity:1;
+		}
+		
+		img{
+			width:30px;
+			vertical-align: -7px;
+			opacity:1;
+		}
+		
+		&.left{
+			transform:translateY(100%);
+		}
+	}
+}
+
+.part{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	.row{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.partcard{
+		// margin:0px 5px;
+		text-align: center;
+		position:relative;
+		margin: 5px;
+		overflow: hidden;
+		padding:0;
+		width: calc(50% - 10px);
+		.text{
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			color:#fff;
+			z-index: 999;
+			h2{
+				font-size: 44px;
+				font-family: "Lucida Grande","Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-weight: 100;
+				margin-top: 10px;
+			}
+			h4{
+				font-size: 15px;
+				font-weight: 400;
+			}
+		}
+		img{
+			width:100%;
+			transition: transform 1s ease-out;
+		}
+		&:hover img{
+			transform: scale(1.05,1.05);
+		}
+	}
+}
+
+.footer-brand{
+	position: relative;
+	ul{
+		margin:0 auto;
+		text-align: center;
+		height: 180px;
+		background: #f7f7f7;
+		padding: 55px 20px;
+		
+		li{
+			display: inline-block;
+			box-sizing: content-box;
+			height: 50px;
+			padding: 10px 0px;
+			&:before{
+				content:"|";
+				color:#979797;
+				margin:0 25px;
+				opacity: .2;
+				font-size: 20px;
+				font-weight: 100;
+			}
+			&:first-child:before{
+				content:"";
+				margin:0px;
+			}
+			img{
+				height: 100%;
+			}
+		}
+	}
+	.left{
+		position: absolute;
+		width:28px;
+		left:50px;
+		top:75px;
+		img{
+			width: 100%;
+		}
+	}
+	.right{
+		position: absolute;
+		right:50px;
+		width:28px;
+		top:75px;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+
+}
+
+
+
+
+
+			

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brands</title>
+    <link rel="stylesheet" type="text/css" href="../vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    @@include('../componet/header.html')
+    <main>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators hidden">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../images/contents/index_hero_img_1.png" alt="">
+                    <div class="carousel-caption">
+                        <img src="../images/contents/index_hero_title_1.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/contents/index_hero_img_2.png" alt="">
+                    <div class="carousel-caption">
+                        <img src="../images/contents/index_hero_title_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <img src="../images/public/arrow_prev.png" alt="">
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <img src="../images/public/arrow_next.png" alt="">
+            </a>
+        </div>
+        <div class="container-fluid part">
+            <div class="row">
+                <div class="partcard col-xs-12 col-sm-6">
+                    <div class="text">
+                        <h2>Projects</h2>
+                        <h4>热门项目</h4>
+                    </div>
+                    <img src="../images/contents/index_part_1.png" alt="">
+                </div>
+                <div class="partcard col-xs-12 col-sm-6">
+                    <div class="text">
+                        <h2>Brands</h2>
+                        <h4>优质品牌</h4>
+                    </div>
+                    <img src="../images/contents/index_part_2.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="partcard col-xs-12 col-sm-6">
+                    <div class="text">
+                        <h2>News</h2>
+                        <h4>新闻事件</h4>
+                    </div>
+                    <img src="../images/contents/index_part_3.png" alt="">
+                </div>
+                <div class="partcard col-xs-12 col-sm-6">
+                    <div class="text">
+                        <h2>Contact</h2>
+                        <h4>联系我们</h4>
+                    </div>
+                    <img src="../images/contents/index_part_4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-brand">
+            <ul class="list-unstyled">
+                <li><img src="../images/public/footer_brand_1.png" alt=""></li>
+                <li><img src="../images/public/footer_brand_2.png" alt=""></li>
+                <li><img src="../images/public/footer_brand_3.png" alt=""></li>
+                <li><img src="../images/public/footer_brand_4.png" alt=""></li>
+                <li><img src="../images/public/footer_brand_1.png" alt=""></li>
+                <li><img src="../images/public/footer_brand_3.png" alt=""></li>
+            </ul>
+            <a href="" class="left"><img src="../images/public/footer_brand_prev.png" alt=""></a>
+            <a href="" class="right"><img src="../images/public/footer_brand_next.png" alt=""></a>
+        </div>
+    </main>
+    @@include('../componet/footer.html')
+    <script src="../vendors/jquery/jquery.min.js"></script>
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
