@@ -9,18 +9,35 @@ header{
     .logo{
         float: left;
         width: 80px;
+        @media(max-width:$breakpoint-xs-max) {
+             width: 40px;
+        }
         img{
             width: 100%;
         }
     }
     nav{
         float: right;
+         @media(max-width:$breakpoint-xs-max) {
+             position:absolute;
+             top:0;
+             left:0;
+             right:0;
+             background-color:#fff;
+        }
         ul{
             li{
                 float: left;
                 margin: 0 10px;
                 opacity: 0.6;
                 transition: opacity 0.2s;
+                @media(max-width:$breakpoint-xs-max) {
+                    float:none;
+                    color:#333;
+                    opacity: 1;
+                    line-height:40px;
+                    border-bottom:1px solid #999;
+                }
                 &:hover{
                     opacity:1;
                     

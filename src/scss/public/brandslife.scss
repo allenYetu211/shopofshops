@@ -10,6 +10,9 @@
   overflow: hidden;
 
   height: 450px;
+  @media (max-width:$breakpoint-xs-max){
+    height: 260px;
+  }
   & > img{
     position: absolute;
     top: 50%;
@@ -26,6 +29,9 @@
     left: 50%;
 
     max-width: 50%;
+    @media (max-width:$breakpoint-xs-max){
+      max-width: 30%;
+    }
 
     transform: translate(-50%, -50%);
     img{
@@ -40,30 +46,48 @@
   border-bottom: 1px solid #E0E0E0;
   background-color: #FFFFFF;
   .brands-items{
+    position:relative;
     margin: 0;
     padding: 0;
-
     text-align: center;
+    
+    .brands-items-search{
+      position:absolute;
+      right:0;
+      top:50%;
+      width:30px;
+      height:30px;
+      transform:translateY(-50%);
+      line-height:0;
+        img{
+          width:100%;
+        }
+    }
     li{
       font-size: 14px;
-
       display: inline-block;
-
-      padding: 0 20px;
-
+      padding: 0 30px;
       list-style: none;
-      &:active{
+      cursor:pointer;
+      color:#929292;
+      &.active{
         color: #FFA221;
+        border-bottom:2px solid #FE112D;
+      }
+      @media (max-width:$breakpoint-xs-max){
+        padding: 0 10px;
       }
     }
   }
 }
 
 .brands-waterfall{
-  max-width: 1140px;
-  margin: 0 auto;
+  // max-width: 1140px;
+  margin: 10px auto;
 .waterfall{
-  display:none;
+  // display:none;
+  max-width:1200px;
+  position:relative;
   &.open{
     display:block;
   }
@@ -72,27 +96,30 @@
   .waterfall-items{
     float: left;
 
-    // width: 380px;
-    margin: 10px 0;
-    width: calc(100% / 3 - 20px);
-    padding: 0 10px;
+    width: 380px;
+    margin: 10px 0px;
+    // width: calc(100% / 3 - 50px);
+    padding: 0;
+    padding-bottom: 28px;
 
     // transition: top .3s,left .3s,width .3s;
 
     background-color: #FFFFFF;  
-    @media(max-width: $breakpoint-xs-max) {
-        width: calc(100% / 2 - 20px);
-    }
+    // @media(max-width: $breakpoint-xs-max) {
+    //     width: calc(100% / 2 - 20px);
+    // }
     @media(max-width: $breakpoint-phone-max) {
         width: 100%;
     }
   }
   .waterfall-items-year{
     font-size: 14px;
-
-    padding: 10px 0;
+    font-weight:200;
+    padding: 18px 12px;
     span{
       color: #FFA221;
+      font-weight:400;
+      margin-left: 5px;
     }
   }
   .waterfall-items-images{
@@ -101,6 +128,7 @@
     }
   }
   .waterfall-items-information{
-    font-size: 22px;
+    font-size: 18px;
+    padding: 0px 12px;
   }
 }

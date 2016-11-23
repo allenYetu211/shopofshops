@@ -5,3 +5,10 @@ $breakpoint-sm-max: 991px;
 $breakpoint-md-min: 992px;
 $breakpoint-md-max: 1199px;
 $breakpoint-lg-min: 1200px;
+
+body{
+    font-family: "PingFang SC","HiraginoSansGB-W3", "STHeitiSC-Light", "微软雅黑", SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+}
+a:focus,input:focus,button:focus{outline:0;}

@@ -7,6 +7,11 @@ footer{
             margin-right: 5%;
             font-size: 14px;
             line-height: 2;
+            @media(max-width:$breakpoint-phone-max) {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+            }
             .subscibe{
                 margin-bottom: 25px;
                 input{
@@ -14,6 +19,9 @@ footer{
                     height: 40px;
                     border:1px solid #fff;
                     border-bottom: 1px solid #e2e2e2;
+                    @media(max-width:$breakpoint-phone-max) {
+                        width: 75%;
+                    }
                 }
                 input::-webkit-input-placeholder{
                     color:#c6c6c6;
@@ -24,18 +32,32 @@ footer{
                     background: #F6F6F6;
                     border: 1px solid #E2E2E2;
                     color:#c6c6c6;
+                    @media(max-width:$breakpoint-phone-max) {
+                        width: 23%;
+                    }
                 }
             }
             .copyright{
+                overflow:hidden;
                 &>.left{
                     float: left;
                     color:#c6c6c6;
+                    @media(max-width:$breakpoint-phone-max) {
+                        font-size: 14px;
+                        text-align: center;
+                        width: 100%;
+                    }
                 }
                 &>.right{
                     float: right;
                     b{
                         margin:0px 15px;
                         color:#FF520E;
+                    }
+                    @media(max-width:$breakpoint-phone-max) {
+                        font-size: 12px;
+                        text-align: center;
+                        width: 100%;
                     }
                 }
             }
@@ -47,6 +69,12 @@ footer{
             img{
                 width: 100%;
                 max-width:90px;
+            }
+            @media(max-width:$breakpoint-phone-max) {
+                float: none;
+                width: 100%;
+                text-align: center;
+                padding-top: 20px;
             }
         }
     }

@@ -34,10 +34,10 @@
                 </div>
             </div>
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <a class="left carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="prev">
                 <img src="../images/public/arrow_prev.png" alt="">
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <a class="right carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="next">
                 <img src="../images/public/arrow_next.png" alt="">
             </a>
         </div>
@@ -75,23 +75,31 @@
                 </div>
             </div>
         </div>
-        <div class="footer-brand">
-            <ul class="list-unstyled">
-                <li><img src="../images/public/footer_brand_1.png" alt=""></li>
-                <li><img src="../images/public/footer_brand_2.png" alt=""></li>
-                <li><img src="../images/public/footer_brand_3.png" alt=""></li>
-                <li><img src="../images/public/footer_brand_4.png" alt=""></li>
-                <li><img src="../images/public/footer_brand_1.png" alt=""></li>
-                <li><img src="../images/public/footer_brand_3.png" alt=""></li>
-                <a href="" class="left"><img src="../images/public/footer_brand_prev.png" alt=""></a>
-                <a href="" class="right"><img src="../images/public/footer_brand_next.png" alt=""></a>
-            </ul>
-            
+        <div class="footer-brand hidden-xs">
+            <div class="footer-shoplogo">
+                <div class="footerXSlogo clearfix">
+                    <ul class="list-unstyled">
+                        <li><img src="../images/public/footer_brand_1.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_2.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_3.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_4.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_1.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_3.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_4.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_3.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_2.png" alt=""></li>
+                        <li><img src="../images/public/footer_brand_1.png" alt=""></li>
+                        <button  class="left js_shoplogo_perv"><img src="../images/public/footer_brand_prev.png" alt=""></button>
+                        <button  class="right js_shoplogo_next"><img src="../images/public/footer_brand_next.png" alt=""></button>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
     @@include('../componet/footer.html')
     <script src="../vendors/jquery/jquery.min.js"></script>
     <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
 </body>
 
 </html>

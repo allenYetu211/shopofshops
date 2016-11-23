@@ -1,0 +1,41 @@
+.brand-minlin{
+  padding: 50px 0;
+   @media(max-width: $breakpoint-phone-max) {
+        padding: 15px 0;
+    }
+  .about-information{
+    padding: 80px 100px; 
+    @media(max-width: $breakpoint-phone-max) {
+        padding: 15px;
+    }
+    p{
+      line-height: 30px;
+    }
+  }
+  .about-develop{
+    padding: 50px 0;
+    img{
+      width:100%;
+    }
+  }
+  .about-contact{
+    padding: 80px 100px;
+     @media(max-width: $breakpoint-phone-max) {
+        padding: 15px;
+    }
+    .about-infor{
+      height:120px;
+      display:flex;
+      align-items: center;
+      @media(max-width:$breakpoint-sm-max) {
+        justify-content:center;
+      }
+      
+      img{
+        @media (min-width: $breakpoint-sm-max){
+          width: 100%;
+        }
+      }
+    }
+  }
+}
