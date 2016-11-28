@@ -22,12 +22,12 @@ main{
 					}
 			}
 			.carousel-caption{
+					top: 50%;
+					transform: translateY(-50%);
 				@media(max-width:$breakpoint-phone-max) {
 					right:25%;
 					left:25%;
 					bottom:auto;
-					top: 50%;
-					transform: translateY(-50%);
 				}
 				img{
 					@media(max-width:$breakpoint-phone-max) {
