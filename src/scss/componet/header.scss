@@ -31,6 +31,13 @@ header{
                 margin: 0 10px;
                 opacity: 0.6;
                 transition: opacity 0.2s;
+                a{
+                    color:#fff;
+                    &:hover{
+                        text-decoration: none;
+                        color:#fff;
+                    }
+                }
                 @media(max-width:$breakpoint-xs-max) {
                     float:none;
                     color:#333;
@@ -40,8 +47,6 @@ header{
                 }
                 &:hover{
                     opacity:1;
-                    
-                    
                 }
             }
 

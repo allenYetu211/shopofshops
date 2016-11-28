@@ -21,6 +21,10 @@
     height: 100%;
 
     transform: translate(-50%, -50%);
+    @media(min-width:1440px) {
+            width:100%;
+            height: auto;
+      }
   }
   .brand-stemplan-title{
     position: absolute;

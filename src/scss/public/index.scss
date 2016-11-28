@@ -16,6 +16,10 @@ main{
 				top:50%;
 				max-width:none;
 				transform:translate(-50%,-50%);
+				@media(min-width:1440px) {
+						width:100%;
+						height: auto;
+					}
 			}
 			.carousel-caption{
 				@media(max-width:$breakpoint-phone-max) {
