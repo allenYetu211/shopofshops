@@ -84,33 +84,34 @@
     }
   }
 }
-
+.brands-waterfall-informations{
+  background-color: #FBFBFB;
+}
 .brands-waterfall{
   // max-width: 1140px;
-  margin: 10px auto;
+  // margin: 10px auto;
 .waterfall{
   // display:none;
-  max-width:1200px;
+  // max-width:1200px;
+  // width: 80%;
   position:relative;
   &.open{
     display:block;
   }
 }
-  background-color: #FBFBFB;
   .waterfall-items{
-    // float: left;
+    float: left;
 
-    // width: 380px;
-    margin: 10px 0px;
-    width: calc(100% / 3 - 5px);
-    padding: 0;
+    // width: 320px;
+    margin: 10px 0;
+    // width: calc(100% / 3 - 5px);
     padding-bottom: 28px;
 
     // transition: top .3s,left .3s,width .3s;
 
     background-color: #FFFFFF;  
     @media(max-width: $breakpoint-xs-max) {
-        width: 50%;
+        // width: 50%;
     }
     @media(max-width: $breakpoint-phone-max) {
         
