@@ -1,7 +1,7 @@
 header{
     position: absolute;
     top:0;
-    z-index:99;
+    z-index:999;
     width: 100%;
     padding:20px;
     color:#fff;
@@ -14,6 +14,52 @@ header{
         }
         img{
             width: 100%;
+        }
+    }
+    .language-mobile{
+        height:35px;
+        line-height:35px;
+        float:left;
+        a{
+            color:#fff;
+            display:block;
+            float:left;
+            padding: 0 8px;
+            border:1px solid #e0e0e0;
+            opacity: 0.7;
+            font-size:12px;
+            &.active{
+                opacity:1;
+            }
+            &:first-child{
+                margin-left:10px;
+            }
+        }
+    }
+    .mobile-nav-more{
+        float: right;
+        margin-top:5px;
+        span{
+            display: block;
+            width: 25px;
+            height: 2px;
+            margin: 3px;
+            opacity: 0.7;
+            background-color:#fff;
+            transition: transform 0.6s ease-in-out;
+        }
+        &.open{
+            span{
+                &:nth-child(1){
+                    transform: rotate(45deg) scaleX(1.2) translate(6px, 5px);
+                }
+                &:nth-child(2){
+                    transform: scale(0);
+                }
+                &:nth-child(3){
+                    transform: rotate(-45deg) scaleX(1.2) translate(2px, 0px);
+                }
+            }
         }
     }
     nav{
@@ -72,5 +118,52 @@ header{
             left: -18px;
             padding:0;
         }
+    }
+}
+.mobile-nav-information{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height:100vh;
+    text-align:right;
+    z-index:98;
+    background: -webkit-linear-gradient(left bottom, #ff6f21 , #ff9b21);
+    background: linear-gradient(left bottom, #ff6f21 , #ff9b21);
+    padding: 120px 15px;
+    transition: transform 0.6s ease-in-out;
+    transform: translate3d(100%, 0,0);
+    &.open{
+        transform: translate3d(0, 0,0);
+    }
+    .nav-introduce{
+        padding-bottom:20px;
+        a{
+             color:#fff;
+             &:hover, &:focus{
+                text-decoration: none;
+             }
+             p{
+                padding: 0 10px;
+                font-size:12px;
+                margin: 0;
+                font-weight:100;
+                &:first-child{
+                    letter-spacing: 2px;
+                    font-size:25px;
+                    font-weight:200;
+                }
+             }
+        }
+    }
+}
+body, html{
+    position:relative;
+    width: 100vw;
+    overflow-x: hidden;
+    &.open{
+        height:100vh;
+        overflow: hidden;
     }
 }

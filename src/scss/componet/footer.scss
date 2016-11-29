@@ -1,5 +1,8 @@
 footer{
     padding: 45px 0px;
+    @media(max-width:$breakpoint-phone-max) {
+                padding:25px 0;
+            }
     .container{
         &>.left{
             width: 85%;
@@ -43,8 +46,8 @@ footer{
                     float: left;
                     color:#c6c6c6;
                     @media(max-width:$breakpoint-phone-max) {
-                        font-size: 14px;
-                        text-align: center;
+                        font-size: 10px;
+                        text-align: left;
                         width: 100%;
                     }
                 }
@@ -56,8 +59,13 @@ footer{
                     }
                     @media(max-width:$breakpoint-phone-max) {
                         font-size: 12px;
-                        text-align: center;
+                        text-align: left;
                         width: 100%;
+                    }
+                    span{
+                        @media(max-width:$breakpoint-phone-max) {
+                            display:block;
+                        }
                     }
                 }
             }
@@ -77,5 +85,40 @@ footer{
                 padding-top: 20px;
             }
         }
+    }
+}
+.right{
+    i{
+        font-style:normal;
+        text-decoration: underline;
+    }
+}
+    
+.mobile-informations{
+    
+}
+.mobile-barcode{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color:rgba(0,0,0,.8);
+    z-index:-10;
+    opacity:0;
+    transition: all 1s;
+    &.open{
+       z-index:9999; 
+        opacity:1;
+    }
+    .barcode{
+            position: absolute;
+            left: 15%;
+            right: 15%;
+            top: 50%;
+            transform: translateY(-50%);
+            img{
+                width:100%;
+            }
     }
 }

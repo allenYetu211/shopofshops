@@ -29,6 +29,18 @@
     shopLogo.transformLogo(shopLogo.transformIndex);
   })
 
+  $('.mobile-nav-more').on('click', function () {
+    toggle.mobilenav($(this));
+  })
+  $('.language-mobile a').on('click', function () {
+    toggle.languageTooke($(this))
+  })
+  $('.mobile-informations i, .mobile-barcode').on('click', function() {
+    toggle.barcode();
+  })
+  $('.barcode').on('click', function(el) {
+    el.stopPropagation();
+  })
   var toggle = {
       showToggle(_t) {
           // waterfall.init();
@@ -42,6 +54,18 @@
 
               }
           })
+      },
+      barcode() {
+        $('.mobile-barcode').toggleClass('open');
+      },
+      languageTooke(_t) {
+         $('.language-mobile a').removeClass('active');
+         _t.addClass('active')
+      },
+      mobilenav (_t) {
+        _t.toggleClass('open');
+        $('.mobile-nav-information').toggleClass('open');
+        $('body').toggleClass('open');
       }
   }
   var shopLogo = {
