@@ -1,139 +1,156 @@
-.wf-parents{
-  position: relative;
-
-  margin: 0 auto;
+.wf-parents {
+    position: relative;
+    margin: 0 auto;
 }
 
-.brand-stemplan{
-  position: relative;
-
-  overflow: hidden;
-
-  height: 450px;
-  @media (max-width:$breakpoint-xs-max){
-    height: 260px;
-  }
-  & > img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    height: 100%;
-
-    transform: translate(-50%, -50%);
-    @media(min-width:1440px) {
-            width:100%;
+.brand-stemplan {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    @media (max-width: $breakpoint-xs-max) {
+        height: 260px;
+    }
+    & > img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        @media(min-width: 1440px) {
+            width: 100%;
             height: auto;
-      }
-  }
-  .brand-stemplan-title{
-    position: absolute;
-    z-index: 97;
-    top: 50%;
-    left: 50%;
-
-    max-width: 50%;
-    @media (max-width:$breakpoint-xs-max){
-      max-width: 25%;
-    }
-
-    transform: translate(-50%, -50%);
-    img{
-      width: 100%;
-    }
-  }
-}
-
-.brands-titlebar{
-  line-height: 90px;
-
-  border-bottom: 1px solid #E0E0E0;
-  background-color: #FFFFFF;
-  .brands-items{
-    position:relative;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    
-    .brands-items-search{
-      position:absolute;
-      right:0;
-      top:50%;
-      width:30px;
-      height:30px;
-      transform:translateY(-50%);
-      line-height:0;
-        img{
-          width:100%;
         }
     }
-    li{
-      font-size: 14px;
-      display: inline-block;
-      padding: 0 30px;
-      list-style: none;
-      cursor:pointer;
-      color:#929292;
-      &.active{
-        color: #FFA221;
-        border-bottom:2px solid #FE112D;
-      }
-      @media (max-width:$breakpoint-xs-max){
-        padding: 0 10px;
-      }
+    .brand-stemplan-title {
+        position: absolute;
+        z-index: 97;
+        top: 50%;
+        left: 50%;
+        max-width: 50%;
+        @media (max-width: $breakpoint-xs-max) {
+            max-width: 25%;
+        }
+        transform: translate(-50%, -50%);
+        img {
+            width: 100%;
+        }
     }
-  }
 }
-.brands-waterfall-informations{
-  background-color: #FBFBFB;
+
+.brands-titlebar {
+    line-height: 90px;
+    @media (max-width: $breakpoint-xs-max) {
+        line-height: 45px;
+    }
+    border-bottom: 1px solid #E0E0E0;
+    background-color: #FFFFFF;
+    .brands-items {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        // @media (max-width:$breakpoint-xs-max) {
+        //         text-align:left;
+        //     }
+        .brands-items-search {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            width: 30px;
+            height: 30px;
+            transform: translateY(-50%);
+            line-height: 0;
+            @media (max-width:$breakpoint-xs-max) {
+                width: 16px;
+                height: 16px;
+                right: 15px;
+                opacity: 0.8;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        li {
+            font-size: 14px;
+            display: inline-block;
+            padding: 0 30px;
+            list-style: none;
+            cursor: pointer;
+            color: #929292;
+            &.active {
+                color: #FFA221;
+                border-bottom: 2px solid #FE112D;
+            }
+            @media (max-width:$breakpoint-xs-max) {
+                padding: 0 13px;
+                font-size:12px;
+            }
+        }
+    }
 }
-.brands-waterfall{
-  // max-width: 1140px;
-  // margin: 10px auto;
-.waterfall{
-  // display:none;
-  // max-width:1200px;
-  // width: 80%;
-  position:relative;
-  &.open{
-    display:block;
-  }
+
+.brands-itemsContainer {
+    @media (max-width: $breakpoint-xs-max) {
+        padding: 0;
+    }
+
 }
-  .waterfall-items{
-    float: left;
 
-    // width: 320px;
-    margin: 10px 0;
-    // width: calc(100% / 3 - 5px);
-    padding-bottom: 28px;
+.brands-waterfall-informations {
+    background-color: #FBFBFB;
+}
 
-    // transition: top .3s,left .3s,width .3s;
-
-    background-color: #FFFFFF;  
-    @media(max-width: $breakpoint-xs-max) {
-        // width: 50%;
+.brands-waterfall {
+    // max-width: 1140px;
+    // margin: 10px auto;
+    .waterfall {
+        // display:none;
+        // max-width:1200px;
+        // width: 80%;
+        position: relative;
+        &.open {
+            display: block;
+        }
     }
-    @media(max-width: $breakpoint-phone-max) {
-        
+    .waterfall-items {
+        float: left;
+        margin: 10px 0;
+        .waterfall-bg{
+          background-color: #FFFFFF;
+          box-shadow:0 0 25px rgba(0,0,0,.1);
+          padding-bottom:20px;
+        }
+        @media(max-width: $breakpoint-xs-max) {
+        }
+        @media(max-width: $breakpoint-phone-max) {
+            padding: 0px 3px;
+        }
     }
-  }
-  .waterfall-items-year{
-    font-size: 14px;
-    font-weight:200;
-    padding: 18px 12px;
-    span{
-      color: #FFA221;
-      font-weight:400;
-      margin-left: 5px;
+    .waterfall-items-year {
+        font-size: 14px;
+        font-weight: 200;
+        padding: 18px 12px;
+        span {
+            color: #FFA221;
+            font-weight: 400;
+            margin-left: 5px;
+        }
+        @media(max-width: $breakpoint-phone-max) {
+          font-size:10px;
+          padding: 10px 3px;
+        }
     }
-  }
-  .waterfall-items-images{
-    img{
-      width: 100%;
+    .waterfall-items-images {
+        img {
+            width: 100%;
+        }
     }
-  }
-  .waterfall-items-information{
-    font-size: 18px;
-    padding: 0px 12px;
-  }
+    .waterfall-items-information {
+        font-size: 18px;
+        padding: 0px 12px;
+        @media(max-width: $breakpoint-phone-max) {
+          font-size:12px;
+          padding: 0 3px;
+        }
+    }
 }
