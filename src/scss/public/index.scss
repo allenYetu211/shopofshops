@@ -39,6 +39,7 @@ main{
 					font-weight:100;
 					@media(max-width:$breakpoint-phone-max) {
 						font-size:14px;
+						font-weight:300;
 					}
 				}
 			}
@@ -107,10 +108,17 @@ main{
 				font-family: "Lucida Grande","Helvetica Neue",Helvetica,Arial,sans-serif;
 				font-weight: 100;
 				margin-top: 10px;
+				@media(max-width:$breakpoint-phone-max) {
+					font-weight: 400;
+					margin-bottom:0;
+				}
 			}
 			h4{
 				font-size: 15px;
 				font-weight: 400;
+				@media(max-width:$breakpoint-phone-max) {
+					margin-top:5px;
+				}
 			}
 			@media(max-width:$breakpoint-xs-max) {
 				h2{

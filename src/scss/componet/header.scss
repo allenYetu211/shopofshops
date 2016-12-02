@@ -25,14 +25,19 @@ header{
             display:block;
             float:left;
             padding: 0 8px;
-            border:1px solid #e0e0e0;
+            border:1px solid rgba(255,255,255,0.75);
             opacity: 0.7;
             font-size:12px;
             &.active{
                 opacity:1;
+                border:1px solid rgba(255,255,255,1);
             }
             &:first-child{
                 margin-left:10px;
+                border-right:none;
+                &.active{
+                    border-right:1px solid;
+                }
             }
         }
     }
@@ -44,7 +49,6 @@ header{
             width: 25px;
             height: 2px;
             margin: 3px;
-            opacity: 0.7;
             background-color:#fff;
             transition: transform 0.6s ease-in-out;
         }
@@ -146,13 +150,11 @@ header{
              }
              p{
                 padding: 0 10px;
-                font-size:12px;
+                font-size:14px;
                 margin: 0;
-                font-weight:100;
+                font-weight:400;
                 &:first-child{
-                    letter-spacing: 2px;
                     font-size:25px;
-                    font-weight:200;
                 }
              }
         }

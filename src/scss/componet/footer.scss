@@ -22,8 +22,13 @@ footer{
                     height: 40px;
                     border:1px solid #fff;
                     border-bottom: 1px solid #e2e2e2;
+                    border-radius:0;
+                    -webkit-appearance:none;
                     @media(max-width:$breakpoint-phone-max) {
                         width: 75%;
+                        float:left;
+                        box-shadow:inner 0px 0px 0px rgba(0,0,0,0);
+                        -webkit-appearance:none;
                     }
                 }
                 input::-webkit-input-placeholder{
@@ -35,8 +40,19 @@ footer{
                     background: #F6F6F6;
                     border: 1px solid #E2E2E2;
                     color:#c6c6c6;
+
                     @media(max-width:$breakpoint-phone-max) {
                         width: 23%;
+                    }
+                }
+                &.action{
+                    input{
+                        border-bottom: 1px solid #fe112d;
+                    }
+                    button{
+                        border: 1px solid #fe112d;
+                        background-color:#fe112d;
+                        color:#fff;
                     }
                 }
             }
