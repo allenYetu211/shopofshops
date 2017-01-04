@@ -3,7 +3,7 @@ header{
     top:0;
     z-index:999;
     width: 100%;
-    padding:20px;
+    padding:40px 20px 20px 40px;
     color:#fff;
     font-size: 13px;
     .logo{
@@ -108,6 +108,7 @@ header{
         button{
             background:none;
             border:0;
+            padding: 0;
             img{
                 width:14px;
                 margin-left: 5px;

@@ -154,3 +154,143 @@
         }
     }
 }
+.waterfall-popup {
+    padding: 50px 0;
+    overflow: hidden
+}
+
+.waterfall-popup .carousel-inner {
+    overflow: initial
+}
+
+.waterfall-popup .water-listen {
+    background-color: #fff;
+    float: left;
+    transition: transform .2s
+}
+
+.waterfall-popup .water-listen>div {
+    padding: 0
+}
+
+.waterfall-popup .water-listen>div:first-child div.water-bl {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 80%
+}
+
+.waterfall-popup .water-listen>div:nth-child(2) div.water-bl-2 {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 40%
+}
+
+.waterfall-popup img {
+    width: 100%
+}
+.waterfaill-introction {
+    padding: 0 25px 0 25px;
+    background: #fff;
+    margin-left: 25%;
+    margin-top: -35%
+}
+
+@media(max-width:480px) {
+    .waterfaill-introction {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0
+    }
+}
+
+.waterfaill-introction h2 {
+    font-size: 30px
+}
+
+@media(max-width:480px) {
+    .waterfaill-introction h2 {
+        font-size: 16px
+    }
+}
+
+.waterfaill-introction p.waterfaill-title {
+    color: #000
+}
+
+@media(max-width:480px) {
+    .waterfaill-introction p.waterfaill-title {
+        font-size: 12px
+    }
+}
+
+.waterfaill-introction span {
+    color: #ffa221;
+    font-weight: 600;
+    font-size: 14px
+}
+
+.waterfaill-introction p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 2;
+    color: #333
+}
+
+.waterfall-arrow {
+    position: absolute;
+    top: 50px;
+    right: -60px;
+    opacity: 0;
+    display: flex;
+    flex-flow: column
+}
+
+@media(max-width:480px) {
+    .waterfall-arrow {
+        flex-flow: row-reverse;
+        top: 150px;
+        right: 3%
+    }
+}
+
+.waterfall-arrow button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 0
+}
+
+@media(max-width:480px) {
+    .waterfall-arrow button {
+        box-shadow: 0 0 5px rgba(0, 0, 0, .07);
+        width: 30px;
+        height: 30px
+    }
+}
+
+.waterfall-arrow button:first-child {
+    margin-bottom: 20px
+}
+
+@media(max-width:480px) {
+    .waterfall-arrow button:first-child {
+        margin-left: 15px;
+        margin-bottom: 0
+    }
+}
+
+.waterfall-arrow button img._hover {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0
+}
+
+@media(min-width:480px) {
+    .waterfall-arrow button:hover ._hover {
+        opacity: 1
+    }
+}

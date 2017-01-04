@@ -2676,117 +2676,190 @@ if (typeof define === 'function' && define.amd) {
     })(Hammer.Manager.prototype.emit);
 }));
 
-$('#carousel-example-generic').hammer().on('swipeleft', function(){
+$('#carousel-example-generic').hammer().on('swipeleft', function () {
 
-  $(this).carousel('next');
+    $(this).carousel('next');
+});
 
- });
+$('#carousel-example-generic').hammer().on('swiperight', function () {
 
-$('#carousel-example-generic').hammer().on('swiperight', function(){
+    $(this).carousel('prev');
+});
 
-  $(this).carousel('prev');
+$(window).on('load', function () {
+    if ($('.waterfall').length != 0) {
+        toggle.waterfall();
+        $('.wf-parents').eq(0).nextAll().find('.waterfall').hide();
+        shopLogo.introduce();
+        // $(window).on('resize', function() {
+        //   shopLogo.introduce()
+        // })
+    }
+    shopLogo.init();
+});
 
- });
+$('.subscibe input').on('keyup', function () {
+    console.log($(this).val());
+    if ($(this).val().trim() != '') {
+        $(this).parent().addClass('action');
+        $(this).next().html('搜索');
+    } else {
+        $(this).parent().removeClass('action');
+        $(this).next().html('提交');
+    }
+});
 
-  $(window).on('load', function() {
-      if ($('.waterfall').length != 0) {
-        toggle.waterfall()
-        $('.waterfall').eq(0).nextAll().hide();
-      }
-      shopLogo.init()
-  })
+$('.brands-items li').on('click', function () {
+    toggle.showToggle($(this));
+});
+$('.js_shoplogo_perv').off().on('click', function () {
+    if (shopLogo.transformIndex <= 0) {
+        return;
+    }
+    shopLogo.transformIndex--;
+    // console.log('less:',_count)
+    shopLogo.transformLogo(shopLogo.transformIndex);
+});
 
-$('.subscibe input').on('keyup', function() {
-  console.log($(this).val())
-  if($(this).val().trim() != '') {
-    $(this).parent().addClass('action');
-    $(this).next().html('搜索')
-  } else {
-    $(this).parent().removeClass('action')
-    $(this).next().html('提交')
-  }
-})
+$('.js_shoplogo_next').off().on('click', function () {
+    if (shopLogo.transformIndex >= $('.footer-shoplogo li').length - 6) {
+        return;
+    }
+    shopLogo.transformIndex++;
+    // console.log('add:',_count)
+    shopLogo.transformLogo(shopLogo.transformIndex);
+});
 
-  $('.brands-items li').on('click', function() {
-      toggle.showToggle($(this));
-  });
-  $('.js_shoplogo_perv').off().on('click', function() {
-      if (shopLogo.transformIndex <= 0) {
-          return
-      }
-      shopLogo.transformIndex--;
-      // console.log('less:',_count)
-      shopLogo.transformLogo(shopLogo.transformIndex);
-  })
+$('.mobile-nav-more').on('click', function () {
+    toggle.mobilenav($(this));
+});
+$('.language-mobile a').on('click', function () {
+    toggle.languageTooke($(this));
+});
+$('.mobile-informations i, .mobile-barcode').on('click', function () {
+    toggle.barcode();
+});
+$('.barcode').on('click', function (el) {
+    el.stopPropagation();
+});
+var toggle = {
+    waterfall: function waterfall() {
+        $('.waterfall').masonry({
+            itemSelector: '.waterfall-items',
+            gutterWidth: 20
+        });
+    },
+    showToggle: function showToggle(_t) {
+        // waterfall.init();
+        // console.log($('.waterfall[data]'))
+        $('.brands-items li').removeClass('active');
+        _t.addClass('active');
+        $('.waterfall').each(function () {
+            if ($(this).parent().data('sw') === _t.data('pois')) {
+                $('.waterfall').hide();
+                $('.waterfall').next().hide();
+                $(this).show();
+            }
+        });
+        this.waterfall();
+    },
+    barcode: function barcode() {
+        $('.mobile-barcode').toggleClass('open');
+    },
+    languageTooke: function languageTooke(_t) {
+        $('.language-mobile a').removeClass('active');
+        _t.addClass('active');
+    },
+    mobilenav: function mobilenav(_t) {
+        _t.toggleClass('open');
+        $('.mobile-nav-information').toggleClass('open');
+        $('body').toggleClass('open');
+    }
+};
+var shopLogo = {
+    transformIndex: 1,
+    init: function init() {
+        var maxWidth = 0;
+        $('.footer-shoplogo li').each(function () {
+            maxWidth += $(this).innerWidth();
+        });
+        $('.footer-shoplogo ul').css('width', maxWidth);
+    },
+    transformLogo: function transformLogo(_count) {
+        // console.log(_count)
+        $('.footer-shoplogo li').css({
+            'transform': 'translateX(-' + _count * 100 + '%)'
+        });
+    },
+    introduce: function introduce() {
+        // let initwidth = $('.water-parent').width();
+        // let _width = $('.water-parent').children().first().width() * $('.water-parent').children().length;
 
-  $('.js_shoplogo_next').off().on('click', function() {
-      if (shopLogo.transformIndex >= $('.footer-shoplogo li').length - 6) {
-          return
-      }
-      shopLogo.transformIndex++;
-      // console.log('add:',_count)
-      shopLogo.transformLogo(shopLogo.transformIndex);
-  })
+        // $('.water-parent').children().css('width', initwidth);
+        // $('.water-parent').css('width', _width);
+        $('.wf-parents ').find('.waterfall-popup').hide();
+    }
+};
 
-  $('.mobile-nav-more').on('click', function() {
-      toggle.mobilenav($(this));
-  })
-  $('.language-mobile a').on('click', function() {
-      toggle.languageTooke($(this))
-  })
-  $('.mobile-informations i, .mobile-barcode').on('click', function() {
-      toggle.barcode();
-  })
-  $('.barcode').on('click', function(el) {
-      el.stopPropagation();
-  })
-  var toggle = {
-      waterfall() {
-           $('.waterfall').masonry({
-              itemSelector: '.waterfall-items',
-              gutterWidth: 20
-          });
-      },
-      showToggle(_t) {
-          // waterfall.init();
-          // console.log($('.waterfall[data]'))
-          $('.brands-items li').removeClass('active');
-          _t.addClass('active');
-          $('.waterfall').each(function() {
-              if ($(this).data('sw') === _t.data('pois')) {
-                  $('.waterfall').hide();
-                  $(this).show();
+$('.waterfall-items').on('click', function () {
+    sliding.showIntroduce($(this));
+});
+$('.waterfall-close').on('click', function () {
+    sliding.close($(this));
+});
 
-              }
-          })
-          this.waterfall();
-      },
-      barcode() {
-          $('.mobile-barcode').toggleClass('open');
-      },
-      languageTooke(_t) {
-          $('.language-mobile a').removeClass('active');
-          _t.addClass('active')
-      },
-      mobilenav(_t) {
-          _t.toggleClass('open');
-          $('.mobile-nav-information').toggleClass('open');
-          $('body').toggleClass('open');
-      }
-  }
-  var shopLogo = {
-      transformIndex: 1,
-      init() {
-          let maxWidth = 0;
-          $('.footer-shoplogo li').each(function() {
-              maxWidth += $(this).innerWidth()
-          })
-          $('.footer-shoplogo ul').css('width', maxWidth);
-      },
-      transformLogo(_count) {
-          // console.log(_count)
-          $('.footer-shoplogo li').css({
-              'transform': 'translateX(-' + _count * 100 + '%)'
-          })
-      }
-  }
+// $('.waterfall-next').on('click', function () {
+//     sliding.next($(this))
+// })
+
+// $('.waterfall-prev').on('click', function () {
+//     sliding.prev($(this))
+// })
+
+$('.waterfall-arrow .waterfall-close').on('click', function () {
+    $(this).css('opacity', 0);
+});
+var sliding = {
+    showState: '',
+    showIntroduce: function showIntroduce(_t) {
+        $('.waterfall-arrow').css('opacity', 1);
+        $('.waterfall-close').css('opacity', 1);
+        this.showState = _t.index();
+        _t.parents('.waterfall').siblings('.waterfall-popup').find('.carousel').carousel(_t.index());
+        _t.parents('.waterfall').siblings('.waterfall-popup').show().end().hide();
+    },
+    close: function close(_t) {
+        _t.parents('.waterfall-popup').prev().fadeIn().end().fadeOut();
+    },
+    next: function next(_t) {
+        if (this.showState > _t.parent().prev().children().length - 2) {
+            return;
+        }
+        console.log('122', this.showState);
+        this.showState++;
+        console.log('1this.showState:', this.showState);
+        _t.parent().prev().children().css({
+            'transform': 'translateX(-' + this.showState * 100 + '%)',
+            'transition': 'transform 0.2s'
+        });
+    },
+    prev: function prev(_t) {
+        if (-this.showState >= 0) {
+            return;
+        }
+        this.showState--;
+        console.log(2);
+        _t.parent().prev().children().css({
+            'transform': 'translateX(-' + this.showState * 100 + '%)',
+            'transition': 'transform 0.2s'
+        });
+    },
+    animations: function animations(_t) {
+        console.log(_t.parent().next().find('.water-parent').children());
+        _t.parent().next().find('.water-parent').children().css('transform', 'translateX(-' + this.showState * 100 + '%)');
+    }
+};
+$("#carousel-rop-6, #carousel-rop-5, #carousel-rop-4, #carousel-rop-3, #carousel-rop-2, #carousel-rop-1").carousel({
+    interval: 0,
+    pause: false
+});
