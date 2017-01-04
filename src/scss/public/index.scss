@@ -1,4 +1,4 @@
-main{
+
 #carousel-example-generic{
 	.carousel-inner{
 		.item{
@@ -202,13 +202,31 @@ main{
 		}
 	}
 }
+	.index_actives_bg{
+		 background:url('../images/contents/index_hero_img_1.png');
+     background-size: auto 100%;
+     background-position-x: 0%;
+     transform: translate3d(0,0,0);
+     animation: keyFrames_animations 500s infinite;
+     			@media(max-width:$breakpoint-phone-max) {
+			     animation: keyFrames_animations 200s infinite;
+					}
+	}
 
-
-
-}
-
-
-
-
-
-			
+	@-webkit-keyframes keyFrames_animations{
+		0%{
+			background-position-x: 0%;
+		}
+		100% {
+			background-position-x: 1000%;
+		}
+	}
+		
+	@keyframes keyFrames_animations{
+		0%{
+			background-position-x: 0%;
+		}
+		100% {
+			background-position-x: 1000%
+		}
+	}
