@@ -28,15 +28,22 @@ header{
             border:1px solid rgba(255,255,255,0.75);
             opacity: 0.7;
             font-size:12px;
+            text-decoration: none;
             &.active{
                 opacity:1;
                 border:1px solid rgba(255,255,255,1);
             }
             &:first-child{
                 margin-left:10px;
-                border-right:none;
+                border-right:0;
                 &.active{
                     border-right:1px solid;
+                }
+            }
+            &:last-child{
+                border-left: 0;
+                  &.active{
+                    border-left:1px solid;
                 }
             }
         }
