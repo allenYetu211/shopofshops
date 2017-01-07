@@ -30,6 +30,10 @@
 					bottom:auto;
 				}
 				img{
+					margin-bottom: 20px;
+					width:50%;
+					max-width:200px;
+				  	margin-top: 30px;
 					@media(max-width:$breakpoint-sm-min) {
 						width:100%;
 					}
@@ -204,29 +208,29 @@
 }
 	.index_actives_bg{
 		 background:url('../images/contents/index_hero_img_1.png');
-     background-size: auto 100%;
-     background-position-x: 0%;
-     transform: translate3d(0,0,0);
-     animation: keyFrames_animations 500s infinite;
-     			@media(max-width:$breakpoint-phone-max) {
-			     animation: keyFrames_animations 200s infinite;
-					}
-	}
+	     background-size: auto 100%;
+	     background-position-x: 0%;
+	 }
+ //     animation: keyFrames_animations 20s infinite;
+ //     			@media(max-width:$breakpoint-phone-max) {
+	// 		     animation: keyFrames_animations 10s infinite;
+	// 				}
+	// }
 
-	@-webkit-keyframes keyFrames_animations{
-		0%{
-			background-position-x: 0%;
-		}
-		100% {
-			background-position-x: 1000%;
-		}
-	}
+	// @-webkit-keyframes keyFrames_animations{
+	// 	0%{
+	// 		background-position-x: 0%;
+	// 	}
+	// 	100% {
+	// 		background-position-x: 100%;
+	// 	}
+	// }
 		
-	@keyframes keyFrames_animations{
-		0%{
-			background-position-x: 0%;
-		}
-		100% {
-			background-position-x: 1000%
-		}
-	}
+	// @keyframes keyFrames_animations{
+	// 	0%{
+	// 		background-position-x: 0%;
+	// 	}
+	// 	100% {
+	// 		background-position-x: 100%
+	// 	}
+	// }

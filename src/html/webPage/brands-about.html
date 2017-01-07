@@ -9,7 +9,58 @@
 </head>
 
 <body>
-    @@include('../componet/header.html')
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="../images/public/logo.png" alt="LOGO"></a>
+        </div>
+        <div class="language-mobile hidden-sm hidden-lg hidden-md">
+            <a class="active" href="javscript:;">中文</a>
+            <a href="javscript:;">英文</a>
+        </div>
+        <div class="mobile-nav-more hidden-sm hidden-lg hidden-md">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dropdown language  hidden-xs">
+            <a href="javascript:;" class="active">中文</a> /
+            <a href="javascript:;">English</a>
+        </div>
+        <nav class="hidden-xs">
+            <ul class="list-unstyled">
+                <li> <a href="#">热门项目</a></li>
+                <li> <a href="./about.html">优质品牌</a></li>
+                <li> <a href="#">新闻事件</a></li>
+                <li> <a href="./brands-about.html" class="active">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mobile-nav-information hidden-sm hidden-lg hidden-md">
+        <div class="nav-introduce">
+            <a href="">
+                <p>Hot Projects</p>
+                <p>热门项目</p>
+            </a>
+        </div>
+        <div class="nav-introduce">
+            <a href="./about.html">
+                <p>Brands</p>
+                <p>优质品牌</p>
+            </a>
+        </div>
+        <div class="nav-introduce">
+            <a href="">
+                <p>News</p>
+                <p>新闻事件</p>
+            </a>
+        </div>
+        <div class="nav-introduce">
+            <a href="./brands-about.html">
+                <p>Contact</p>
+                <p>联系我们</p>
+            </a>
+        </div>
+    </div>
     <main>
         <div class="brand-stemplan">
             <img src="../images/contents/hero_img_aboutus.png">
@@ -17,49 +68,42 @@
                 <img src="../images/contents/hero_title_aboutus.png" alt="">
             </div>
         </div>
-
         <div class="brand-minlin">
             <div class="container">
                 <div class="about-information">
                     <p>店家公司业务覆盖全球, 为准备进入中国的最佳商业品牌寻找特许 经营总代理。通过米兰特许经营博览会,店家公司与意大利2500多 家特许经营企业建立了合作伙伴关系,从而搭建起中意两国之间相 互合作的桥梁。同时店家公司还与中国最重要的地产企业合作,为特 许经营企业在选址等方面提供一系列必要的服务。店家公司业务范 围涉及食品餐饮健康、母婴、家居装饰、时尚轻奢侈品和社区服务 等多个领域。</p>
                 </div>
-
                 <div class="about-develop">
-
                     <div class="hidden-xs ">
                         <img src="../images/contents/content_aboutus_1.png">
                     </div>
-
                     <div class="hidden-lg hidden-md hidden-sm mobile-liuctu">
                         <img src="../images/contents/content_aboutus-mobile_1.png">
                     </div>
-
                 </div>
-
                 <div class="about-contact">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 about-infor">
-                        <p>北京办事处：北京市东城区歌华大厦<br/>米兰办事处：意大利米兰xxxxxxxxxx</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 about-infor">
+                            <p>北京办事处：北京市东城区歌华大厦
+                                <br/>米兰办事处：意大利米兰xxxxxxxxxx</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 about-infor  hidden-xs">
+                            <img src="../images/contents/content_aboutus_2.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 about-infor  hidden-xs">
+                            <p>电子邮箱：info@shopofshops.com
+                                <br/>扫码关注微信公共号：shopofshops</p>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 about-infor  hidden-xs">
-                        <img src="../images/contents/content_aboutus_2.png">
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 about-infor  hidden-xs">
-                        <p>电子邮箱：info@shopofshops.com<br/>扫码关注微信公共号：shopofshops</p>
-                    </div>
-                </div>
                 </div>
             </div>
-
         </div>
-       
     </main>
     @@include('../componet/footer.html')
     <script type="text/javascript" src="../vendors/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../vendors/masonry/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="../js/app.js"></script>
-
 </body>
 
 </html>

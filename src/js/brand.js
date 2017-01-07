@@ -15,8 +15,37 @@ $(window).on('load', function () {
         $('.wf-parents').eq(0).nextAll().find('.waterfall').hide();
         shopLogo.introduce();
     }
+
+    if ($('.index_actives_bg').length != 0) {
+        initIndexBg.init()
+    }
+
     shopLogo.init();
 });
+
+
+var initIndexBg = {
+    initCount: 0,
+    stateCount: 0,
+
+    spte () {
+        initIndexBg.initCount += 0.5;
+        $('.index_actives_bg').css({
+            'background-position-x': -initIndexBg.initCount
+        }) 
+        if (initIndexBg.initCount > initIndexBg.stateCount) {
+            initIndexBg.initCount = 0
+        }
+        requestAnimationFrame(initIndexBg.spte)
+    },
+
+    init() {
+        initIndexBg.stateCount = $('.index_actives_bg').height() / 450 * 1440
+        console.log(initIndexBg.stateCount)
+        requestAnimationFrame(initIndexBg.spte)
+    }
+}
+
 
 $('.subscibe input').on('keyup', function () {
     if ($(this).val().trim() != '') {
@@ -64,7 +93,9 @@ $('.barcode').on('click', function (el) {
     el.stopPropagation();
 });
 
-
+$('.language a').on('click', function () {
+    toggle.languages($(this))
+})
 var toggle = {
     waterfall () {
 
@@ -90,20 +121,33 @@ var toggle = {
         });
 
         this.waterfall();
+
+
     },
     barcode () {
         $('.mobile-barcode').toggleClass('open');
     },
+
+
     languageTooke (_t) {
         $('.language-mobile a').removeClass('active');
         _t.addClass('active');
     },
+
+
     mobilenav (_t) {
         _t.toggleClass('open');
         $('.mobile-nav-information').toggleClass('open');
         $('body').toggleClass('open');
+    },
+
+    languages (_t) {
+        $('.language a').removeClass('active');
+        _t.addClass('active');
     }
 };
+
+
 var shopLogo = {
     transformIndex: 1,
 
@@ -138,7 +182,6 @@ $('.waterfall-close').on('click', function () {
 });
 
 $('.waterfall-arrow .waterfall-close').on('click', function () {
-    $(this).css('opacity', 0);
 });
 
 $('.waterfall-next').on('click', function () {
@@ -158,9 +201,7 @@ var sliding = {
 
     getActionsNext (_t) {
         let _transformsNext = _t.parent().siblings('.water-parent');
-
         if (_transformsNext.find('.item:last').hasClass('active')) {
-        console.log(111)
             return
         } else {
             _transformsNext.find('.carousel').carousel('next')
@@ -169,20 +210,18 @@ var sliding = {
 
         if (this.filgsNext) {
             if (_transformsNext.find('.item').eq(_transformsNext.find('.item').length - 2).hasClass('active')) {
-                _t.find('img:last').addClass('shows');
+                _t.find('img:last').addClass('shows').end().find('img._hover').hide();
                 this.filgsNext = false
             }
          }
         this.filgsPrev = true
-        _t.siblings('.waterfall-prev').find('img:last').removeClass('shows');
+        _t.siblings('.waterfall-prev').find('img:last').removeClass('shows').end().find('img._hover').show();
     },
 
 
     getActionsPrev (_t) {
         let _transformsNext = _t.parent().siblings('.water-parent');
-        console.log(_transformsNext.find('.item:first'))
         if (_transformsNext.find('.item:first').hasClass('active')) {
-        console.log(222)
             return
         } else {
             _transformsNext.find('.carousel').carousel('prev');
@@ -191,27 +230,51 @@ var sliding = {
 
         if (this.filgsPrev) {
             if (_transformsNext.find('.item').eq(1).hasClass('active')) {
-                _t.find('img:last').addClass('shows');
+                _t.find('img:last').addClass('shows').end().find('img._hover').hide();
                 this.filgsPrev = false
             }
          }
          this.filgsNext = true
-         _t.siblings('.waterfall-next').find('img:last').removeClass('shows');
+         _t.siblings('.waterfall-next').find('img:last').removeClass('shows').end().find('img._hover').show();
     },
 
 
     showIntroduce (_t) {
         $('html,body').animate({scrollTop: $('.brands-items').offset().top}, 200);
-        $('.waterfall-arrow').css('opacity', 1);
-        $('.waterfall-close').css('opacity', 1);
+        $('.waterfall-arrow').css({
+        }).addClass('opens')
         this.showState = _t.index();
-        _t.parents('.waterfall').siblings('.waterfall-popup').find('.carousel').carousel(_t.index());
-        _t.parents('.waterfall').siblings('.waterfall-popup').show().end().hide();
+
+        let sibliParens = _t.parents('.waterfall').siblings('.waterfall-popup');
+        sibliParens.find('.carousel').carousel(_t.index());
+
+        if ($(window).width() > 480) {
+            sibliParens.slideDown('400').end().slideUp('400');
+        } else {
+            sibliParens.show().end().hide();
+        }
+
+         sibliParens.find('.waterfall-prev img:last, .waterfall-next img:last').removeClass('shows');
+
+         if (_t.index() === 0) {
+            sibliParens.find('.waterfall-prev img:last').addClass('shows').end().find('img._hover').hide();
+        } else if (_t.index() === sibliParens.find('.item').length - 1) {
+             sibliParens.find('.waterfall-next img:last').addClass('shows').end().find('img._hover').hide();
+         }
+         if (sibliParens.find('.item').length === 1) {
+            sibliParens.find('.waterfall-prev img:last').addClass('shows').end().find('img._hover').hide();
+            sibliParens.find('.waterfall-next img:last').addClass('shows').end().find('img._hover').hide();
+         }
     },
 
 
     close (_t) {
-        _t.parents('.waterfall-popup').prev().fadeIn().end().fadeOut();
+         $('.waterfall-arrow').removeAttr('style').removeClass('opens')
+        if ($(window).width() > 480) {
+            _t.parents('.waterfall-popup').prev().slideDown('400').end().slideUp('400');
+        } else {
+            _t.parents('.waterfall-popup').prev().show().end().hide();
+        }
          if (this.showState > _t.parent().prev().children().length - 2) {
             return;
         }
@@ -221,21 +284,6 @@ var sliding = {
             'transition': 'transform 0.2s'
         });
     },
-
-
-    prev (_t) {
-        if (-this.showState >= 0) {
-            return;
-        };
-
-        this.showState--;
-        _t.parent().prev().children().css({
-            'transform': 'translateX(-' + this.showState * 100 + '%)',
-            'transition': 'transform 0.2s'
-        });
-
-    },
-
 
     animations (_t) {
         _t.parent().next().find('.water-parent').children().css('transform', 'translateX(-' + this.showState * 100 + '%)');

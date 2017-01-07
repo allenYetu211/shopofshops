@@ -128,7 +128,7 @@
           padding-bottom:20px;
           transition: box-shadow 0.5s;
           &:hover{
-            box-shadow:0 0 25px rgba(0,0,0,.1);
+            box-shadow:0 4px 12px rgba(198,91,0,0.3);
           }
         }
         @media(max-width: $breakpoint-xs-max) {
@@ -166,7 +166,6 @@
     }
 }
 .waterfall-popup {
-    background-color: #fff;
     overflow: hidden
 }
 
@@ -200,8 +199,8 @@
     width: 100%
 }
 .waterfaill-introction {
-    padding: 0 75px;
-
+    padding: 50px 75px;
+    background-color:#fff;
 }
 
 @media(max-width:480px) {
@@ -248,11 +247,15 @@
 
 .waterfall-arrow {
     position: absolute;
-    top: 50px;
+    top: 0;
     right: -60px;
     opacity: 0;
     display: flex;
-    flex-flow: column
+    flex-flow: column;
+    transition: opacity 0.5s;
+    &.opens {
+        opacity: 1;
+    }
 }
 
 @media(max-width:480px) {
@@ -369,7 +372,7 @@
         bottom: 0;
         top: 0;
         background-color:#FF520E;
-        transition: transform 0.5s 1s;
+        transition: transform 0.35s 0.5s;
     }
 }
 .active{
