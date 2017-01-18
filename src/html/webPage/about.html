@@ -3,1372 +3,283 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>brands</title>
+    <title>About | Shopofshops</title>
     <link rel="stylesheet" type="text/css" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
-   <header>
-    <div class="logo">
-        <a href="./index.html"><img src="../images/public/logo.png" alt="LOGO"></a>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="../images/public/logo.png" alt="LOGO"></a>
+        </div>
+        <div class="language-mobile hidden-sm hidden-lg hidden-md">
+            <a class="active" href="javscript:;">中文</a>
+            <a href="javscript:;">英文</a>
+        </div>
+        <div class="mobile-nav-more hidden-sm hidden-lg hidden-md">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dropdown language  hidden-xs">
+            <a href="javascript:;" class="active">中文</a> /
+            <a href="javascript:;">English</a>
+        </div>
+        <nav class="hidden-xs">
+            <ul class="list-unstyled">
+                <li> <a href="#">店家服务</a></li>
+                <li> <a href="./brands.html">精选品牌</a></li>
+                <li> <a href="#">商业方案</a></li>
+                <li> <a href="#">新闻资讯</a></li>
+                <li> <a href="./about.html" class="active">关于我们</a></li>
+                <li> <a href="#">项目众筹</a></li>
+            </ul>
+        </nav>
+    </header>
+   <div class="mobile-nav-information hidden-sm hidden-lg hidden-md">
+    <div class="nav-introduce">
+        <a href="#">
+            <p>Services</p>
+            <p>店家服务</p>
+        </a>
     </div>
-    <div class="language-mobile hidden-sm hidden-lg hidden-md">
-        <a class="active" href="javscript:;">中文</a>
-        <a href="javscript:;">英文</a>
+    <div class="nav-introduce">
+        <a href="./brands.html">
+            <p>Brands</p>
+            <p>精选品牌</p>
+        </a>
     </div>
-    <div class="mobile-nav-more hidden-sm hidden-lg hidden-md">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class=" language  hidden-xs">
-        <a href="javascript:;" class="active">中文</a>
-        /
-        <a href="javascript:;">English</a>
-    </div>
-    <nav class="hidden-xs">
-        <ul class="list-unstyled">
-            <li> <a href="#">热门项目</a></li>
-            <li> <a href="./about.html" class="active">优质品牌</a></li>
-            <li> <a href="#">新闻事件</a></li>
-            <li> <a href="./brands-about.html">联系我们</a></li>
-        </ul>
-    </nav>
-</header>
-<div class="mobile-nav-information hidden-sm hidden-lg hidden-md">
     <div class="nav-introduce">
         <a href="">
-            <p>Hot Projects</p>
-            <p>热门项目</p>
+            <p>Projects</p>
+            <p>商业方案</p>
+        </a>
+    </div>
+    <div class="nav-introduce">
+        <a href="#">
+            <p>News</p>
+            <p>新闻资讯</p>
         </a>
     </div>
     <div class="nav-introduce">
         <a href="./about.html">
-            <p>Brands</p>
-            <p>优质品牌</p>
+            <p>Info</p>
+            <p>关于我们</p>
         </a>
     </div>
     <div class="nav-introduce">
-        <a href="">
-            <p>News</p>
-            <p>新闻事件</p>
-        </a>
-    </div>
-    <div class="nav-introduce">
-        <a href="./brands-about.html">
-            <p>Contact</p>
-            <p>联系我们</p>
+        <a href="#">
+            <p>Crowdfunding</p>
+            <p>项目众筹</p>
         </a>
     </div>
 </div>
-
     <main>
         <div class="brand-stemplan">
-            <img src="../images/contents/hero_img_brand.png">
+            <img src="../images/contents/hero_img_aboutus.png">
             <div class="brand-stemplan-title">
-                <img src="../images/contents/hero_title_brand.png" alt="">
+                <img src="../images/contents/hero_title_aboutus.png" alt="">
             </div>
         </div>
-        <div class="brands-titlebar">
-            <div class="container brands-itemsContainer">
-                <ul class="brands-items">
-                    <li class="active" data-pois="1">全部</li>
-                    <li data-pois="2">美食 </li>
-                    <li data-pois="3">健康</li>
-                    <li data-pois="4">设计</li>
-                    <li data-pois="5">时尚</li>
-                    <li data-pois="6">休闲</li>
-                    <div class="brands-items-search hidden-xs">
-                        <img src="../images/public/icon_search.png">
-                    </div>
-                </ul>
-            </div>
-        </div>
-        <div class=" brands-waterfall-informations">
-            <div class="brands-waterfall container">
-                <div class=" wf-parents " data-sw="1">
-                    <div class="waterfall">
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_1.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    rosso pomodoro
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    红番茄 - 来自比萨饼故乡的意式餐厅
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_2.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    oltre
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Oltre - 意大利白领女性的最爱
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_3.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Gelateria Dolz
-                                    <span>美食</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    DOLZ冰淇淋 - 传统意式Gelato的新玩法
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_4.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Natura Sì
-                                    <span>健康</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Natura Sì 有机产品市场的“超级”模式
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_5.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    ego chocolate
-                                    <span>美食</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    米兰Ego Chocolat，全新理念的巧克力概念店
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_6.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Freddy
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Freddy - 网红塑型专家
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_7.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    primigi
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Primigi童装, 0-14岁意式穿搭解决方案
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_8.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    DIS
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    迪斯手工制鞋
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_9.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Kasanova
-                                    <span>设计</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Kasanova – 意大利版的宜家家居
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_10.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    the merchant of venice
-                                    <span>休闲</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    威尼斯商人 - 香水与玻璃艺术的邂逅
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_11.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Vibram Fivefingers
-                                    <span>休闲</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Vibram Fivefingers – 再一次改写鞋类历史的创新设计
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_12.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    primadonna
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Primadonna - 日售万件的时尚女鞋&包袋
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_13.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Valerio1966
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Valerio 1966 - “高定范”的男女正装
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="waterfall-popup clearfix">
-                        <div class="water-parent">
-                            <div id="carousel-rop-1" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="../images/contents/brand_mobile/1.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/1.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/1-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/1-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/1-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>红番茄 - 来自比萨饼故乡的意式餐厅</h2>
-                                            <p class="waterfaill-title">rosso pomodoro <span> 时尚</span></p>
-                                            <p>30年前，3个热爱意大利传统美食的朋友在比萨饼的发源地，意大利那波勒斯市创立了红番茄品牌。第一家餐厅开设于市中心的Vittorio Emanuele大街，在随后的几十年里，红番茄餐厅在意大利和全球开店超过70家，遍布欧洲，北美甚至是亚洲的日本和沙特。</p>
-                                            <p>餐厅的主打当然是比萨饼，各种不同的经典口味配合应季的食谱。精选各种优质食材甚至是用水，其中不乏众多符合国际慢食协会标准的产品。</p>
-                                            <p>作为少数可以取得成功的意大利连锁餐厅，红番茄的秘诀，是用与烹饪技巧关联性很小的比萨饼作为主打产品。精心的设计和装饰使餐厅不再仅是果腹充饥的地方，而更是可以从中获得舒适享受的场所。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_1.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/8.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/8.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/2-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/2-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/2-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Oltre - 意大利白领女性的最爱</h2>
-                                            <p class="waterfaill-title">oltre <span> 时尚</span></p>
-                                            <p>意大利女装品牌Oltre隶属于Miroglio时装集团，该集团成立于1947年，是意大利最大的纺织面料及成衣零售集团之一，也是欧洲服装市场为数不多的几个集面料生产、服装设计、终端销售为一体的集团之一，对女装市场变化有着快速、敏捷的反应。集团旗下拥有11大女装品牌，超过1300家单一品牌专卖店和5000家合作商户。</p>
-                                            <p>Oltre品牌女装创立于2000年，定位于成熟的时尚白领女性。产品线从正装到休闲，设计风格简洁，色彩稳重。目前该品牌已在意大利境内开店超过200家。</p>
-                                          
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_2.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/2.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/2.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/3-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/3-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/3-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>DOLZ冰淇淋 - 传统意式Gelato的新玩法</h2>
-                                            <p class="waterfaill-title">Gelateria Dolz <span>美食</span></p>
-                                            <p>传统口味的意大利冰淇淋也可以由客户自己动手自制了，这是诞生于2014年的Dolz冰淇淋的“独家配方”。虽然品牌成立仅仅两年，但是其背后的经营方却是一个拥有超过30年冰淇淋制作与销售经验的专业团队。</p>
-                                            <p>Dolz冰淇淋特别强调消费的体验感，让客户自己按照需要的口味和数量“亲手制作”冰淇淋。客户首先会自取一个甜筒或者小纸杯，在自助冰淇淋机前选择自己喜欢的口味和数量挤入甜筒或纸杯中，最后在自己加上糖浆，坚果，饼干碎，新鲜水果或者奶油。最后将成品拿到收款台进行称重并付款。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_3.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/4.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/4.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/4-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/4-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/4-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Natura Sì - 有机产品市场的“超级”模式</h2>
-                                            <p class="waterfaill-title">Natura Sì <span> 健康</span></p>
-                                            <p>Natura si是意大利最大的有机产品连锁超市，2009年在意大利维罗纳由成立于1992年的意大利革新研究会（1994年更名为natura si）与行业最大的批发商Ecor公司联合组建。公司2015年营业额达到3亿3千万欧元。</p>
-                                            <p>第一家natura si品牌有机天然产品超市于1994年开业，至今已开设超过100家。在超市内有超过4000种通过认证的天然有机食品在售，每一种产品都以尊重自然环境，维护人类健康，保护动物权益的方式生产，并通过权威质检机构的严格审查并最终认证。产品中还包括一系列专门针对儿童的产品，同时还有无麸质食品（Gluten-free）和针对绝对素食主义者食品。natura si有机超市希望帮助每一个人选择有利于自身健康的产品，倡导更健康的饮食文化。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_4.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/3.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/3.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/5-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/5-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/5-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>米兰Ego Chocolat - 全新理念的巧克力概念店 </h2>
-                                            <p class="waterfaill-title">Ego Chocolat <span> 时尚</span></p>
-                                            <p>Ego Chocolat是世代经营甜点生意的意大利Lulini家族的全新品牌。在上个世纪初期，家族经营的第一家甜点店在开张，并且在Mantova市中心的主要街道上用流动售货车销售手工冰淇淋。随着位于米兰市的Piave甜点店的开业，跻身米兰乃至全意大利顶级甜点店行列成为了家族为之奋斗的目标。</p>
-                                            <p>今日，家族企业Italian Pastry Project公司主要生产高端意式手工甜点，采用高品质的原材料并且在制作工艺上保持家族多年的传统。Ego Chocolat Milano是公司最近推出的以巧克力为主题的概念店：将意大利创意与巧克力，冰淇淋以及手工甜点相结合以全新的方式进行演绎。销售店面和制作工坊相结合的方式使得客户在获得可口美味的同时，也可以亲身体验带来欢乐与满足感的巧克力文化。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_5.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/7.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/7.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/6-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/6-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/6-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Freddy - 从意大利国家体操队供应商到网红塑型专家</h2>
-                                            <p class="waterfaill-title">Freddy <span> 时尚</span></p>
-                                            <p>1976年，Carlo Freddi创建了名为La Danza的制鞋公司，专业生产舞蹈及体操专用鞋。进入80年代以后，随着欧洲健身运动的逐步流行，公司开始生产专业健身服装。把并从90年代开始，成为意大利及法国有氧运动协会，意大利体操协会，意大利体育舞蹈协会，斯卡拉剧院舞蹈团及伦敦芭蕾舞团等欧洲各大体操及舞蹈团体的官方合作伙伴及赞助商。</p>
-                                            <p>除了专业体操和舞蹈领域，Freddy公司还推出生活时尚系列服饰，特别是经典的WR.UP系列，凭借其完美的塑形能力，被众多女性消费者称为“蜜桃臀塑型裤”，也成为公司最受欢迎，最为畅销的产品系列。</p>
-                                            <p>目前Freddy公司已经在欧洲全境，日本，韩国，澳洲，俄罗斯等国家和地区开设了超过1000家专卖店。</p>
-                                        </div>
-                                        
-                                        </div><img src="../images/contents/content_brand_6.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/11.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/11.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/7-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/7-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/7-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Primigi童装 - 0-14岁意式穿搭解决方案</h2>
-                                            <p class="waterfaill-title">Primigi <span> 时尚</span></p>
-                                            <p>当1975年，David和Renato Mazzocconi两兄弟成立了Imac公司，初期只是承接一些其他鞋履品牌的外包加工订单。公司随后逐步发展壮大，并将科技创新作为主攻的方向，同时也日渐走向国际化。</p>
-                                            <p>2001年，公司收购了IGI鞋业科技公司及该公司童鞋品牌PRIMIGI。这一品牌自1976年创立以来，一直是高科技，精选材料和意大利风格的代名词。</p>
-                                            <p>自2007年开始，公司开始开设Primigi单一品牌童装店，在销售童鞋的同时，也将0-14岁儿童的服装与配饰一起进行销售，取得了不俗的销售业绩。目前Primigi品牌专卖店在全球已超过300家。</p>
-                                            <p>Imac集团目前还拥有另外两个品牌，分别为成年男女服装鞋履品牌IGI&Co，以及舒适功能鞋品牌Enval Soft。2015年，Imac共计共销售8.800.000双鞋履以及4.700.000件服装，总营业额达240.000.000欧元。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_7.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/6.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/6.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/8-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/8-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/8-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>迪斯手工制鞋 - 百年匠心与互联网联姻</h2>
-                                            <p class="waterfaill-title">DIS <span> 时尚</span></p>
-                                            <p>“迪斯鞋业”的创始人安德烈和弗郎西斯科兄弟，来自意大利乃至欧洲最重要的皮鞋产区-马尔凯大区。Gucci，Prada，Tod’s，Versace等意大利奢侈品品牌的鞋履生产厂均设在这个区域。来自制鞋世家的两兄弟毕业于高等院校经济及互联网科技专业，于2013年创立了全新的品牌，将“意大利制造”的高品质与互联网可以相结合，获得巨大的成功。</p>
-                                            <p>迪斯并不销售标准化的成品皮鞋，而是根据每一位客户的需求和尺码为其量身制作。客户在测量了自己的尺码之后便可以登录公司的网站，通过在线系统自行选择自己喜欢的皮鞋款式。从色泽到皮质，从鞋帮到鞋底甚至是鞋带，客户都可以按照自己的喜好来任意组合专属于自己，独一无二的鞋履。</p>
-                                            <p>与此同时，迪斯也在米兰最时尚购物区的Spiga大街及意大利全境和欧洲其他国家的多个城市开设了多家实体店面，展示皮料和鞋型样本并提供更为高端的量脚定制服务。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_8.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/5.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/5.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/9-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/9-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/9-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Kasanova - 意大利版的宜家家居</h2>
-                                            <p class="waterfaill-title">Kasanova <span> 时尚</span></p>
-                                            <p>1968年，为了维持生计，年轻的Giannina Fontana在自己的父亲—一位家用百货的游商去世之后，开始了自己的创业之路。从上世纪70年代开始，她举债购地在伦巴第大区的Arcore小镇建立了一间批发仓库，主营家庭日用品，灶具和五金90年代是她事业的转折期，Giannina Fontana预见到自己所经营的日用品行业正在转型，因此选择特许经营方式。1994年， “Kasanova，爱家的人”连锁品牌正式成立，由此开始了与意大利以及国际最为权威的供应商之间的紧密合作。这一连锁品牌的出现可谓一个（填补了市场空白的）巨大的革命，因为在当时的家庭用品市场上，只有高档的精品瓷器商店和低端的露天集市。</p>
-                                            <p>目前，kasanova拥有200家零售店面，员工超过1000人。公司的产品线也扩展至家居饰品领域。除了kasanova之外，还有kasanova+，家居用品奥特莱斯，树上的家等子品牌，目前距离登陆资本市场只有一步之遥。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_9.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/12.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/12.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/10-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/10-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/10-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>威尼斯商人 - 香水与玻璃艺术的邂逅</h2>
-                                            <p class="waterfaill-title">the merchant of venice <span> 休闲</span></p>
-                                            <p>威尼斯是世界香水文化的发源地之一，这个曾经的海上王国通过海洋将香水文化传播到全世界。 “威尼斯商人”品牌建立于2011年，并于2012年在威尼斯本岛上一间建造于1600年的古老药店内，开设了首家旗舰店。</p>
-                                            <p>威尼斯商人定位于香水领域的奢侈品，除了经神秘配方调制的香水本身，由驰名世界的威尼斯穆拉诺玻璃制成的香水瓶，也堪称艺术精品。</p>
-                                            <p>国际知名的意大利舞台剧布景大师Pier Luigi Pizzi和另一位零售设计的大师Paolo Lucchetta分别为品牌设计了古典与现代两种风格的店面。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_10.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/13.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/13.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/11-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/11-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/11-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Vibram Fivefingers - 再一次改写鞋类历史的创新设计</h2>
-                                            <p class="waterfaill-title">Vibram Fivefingers <span> 休闲</span></p>
-                                            <p>vibram是意大利著名的橡胶生产厂商，其专门为鞋底设计的橡胶以出色的耐磨性、良好的防滑性、均匀的质地获得了世界众多制鞋厂商的认可。</p>
-                                            <p>2005年,Vibram首次在美国与欧洲推出Fivefingers。它是一种足套，真正的“第二层皮肤”，带来了对于“赤足”行走概念的革命。。</p>
-                                            <p>它革命性的创新设计让人体筋骨经络运作得更自然无束。VibramFivefingers有效地让脚变得更健康，增强足部和小腿的肌肉，增加足部运动的范围和增强足底传感接收－保持身体平衡和敏捷的重要元素；它通过促使前脚掌着地（传统的跑步鞋促使后跟着地）和更自然跑步的方式从而减少对膝盖，臀部及下背的冲击，让跑步变得更安全和健康。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_11.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/9.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/9.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/12-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/12-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/12-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Primadonna - 日售万件的时尚女鞋&包袋</h2>
-                                            <p class="waterfaill-title">Primadonna <span> 时尚</span></p>
-                                            <p>Primadonna品牌于2000年由有着数十年制鞋行业经验的Tatarella家族所创建。公司总部位于意大利南部海港城市巴里，而设计与研发中心则设于时尚之都米兰。</p>
-                                            <p>品牌定位时尚女性客户，主打女鞋，女款包袋及皮具配件等产品。Primadonna与知名设计师的合作，其产品具有典型的简约时尚的意大利风格。</p>
-                                            <p>目前品牌开店超过330家，每天销售超过10000件产品。</p>
-                                        </div>
-                                        
-                                        </div><img src="../images/contents/content_brand_12.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/10.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/10.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/13-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/13-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/13-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Valerio 1966 - “高定范”的男女正装</h2>
-                                            <p class="waterfaill-title">Valerio 1996 <span> 时尚</span></p>
-                                            <p>Valerio 1966 是诞生于2016年的全新品牌。它与Primadonna同属于Tatarella家族企业集团。</p>
-                                            <p>与Primadonna品牌相比，Valerio1966定位于更为高端的男女正装与鞋履，面向对于衣着个性化有着更为严苛要求的客户群体。通过精湛的做工，令产品达到“私人定制”的效果。</p>
-                                            <p>目前品牌开设5家专卖店，与Primadonna形成产品线的互补。</p>
-                                        </div>
-                                        
-                                        </div><img src="../images/contents/content_brand_13.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-arrow">
-                            <button class="waterfall-close">
-                                <img src="../images/contents/close_normal.png">
-                                <img src="../images/contents/close_hover.png" class="_hover ">
-                            </button>
-                            <button class="waterfall-next right" role="button">
-                                <img src="../images/contents/next_normal.png">
-                                <img src="../images/contents/next_hover.png" class="_hover ">
-                                <img src="../images/contents/next_disable.png" class="waterShows">
-                            </button>
-                            <button class="waterfall-prev left" role="button">
-                                <img src="../images/contents/prev_normal.png">
-                                <img src="../images/contents/prev_hover.png" class="_hover ">
-                                <img src="../images/contents/prev_disable.png" class="waterShows">
-                            </button>
-                        </div>
-                    </div>
+        <div class="brand-minlin">
+            <div class="container">
+                <div class="about-information">
+                    <h2 class="title-abouth2">
+                       公司介绍 
+                    </h2>
+                    <p>北京环球店家网络发展有限公司，是中国首家致力于海外精选商业品牌的投资加盟平台建设，成为专业的海外品牌挑选、商业模式改良、商业地产合作开发、小微创业以及品牌资本孵化的专业B2B商业服务公司。公司依靠特有的海外资源，整合团队优势，针对中国市场小微商业模式和品牌的优质资源稀缺、个体投资渠道的匮乏状况，面向全国个体和商业机构投资者打造最优质的海外小微商业品牌挑选、引进、加盟和服务网络平台。</p>
                 </div>
-                <div class=" wf-parents " data-sw="2">
-                    <div class="waterfall">
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_1.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    rosso pomodoro
-                                    <span>美食</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    红番茄 - 来自比萨饼故乡的意式餐厅
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_3.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Gelateria Dolz
-                                    <span>美食</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    DOLZ冰淇淋 - 传统意式Gelato的新玩法
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_5.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    ego chocolate
-                                    <span>美食</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    米兰Ego Chocolat，全新理念的巧克力概念店
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="waterfall-popup clearfix">
-                        <div class="water-parent">
-                            <div id="carousel-rop-2" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="../images/contents/brand_mobile/1.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/1.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/1-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/1-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/1-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>红番茄 - 来自比萨饼故乡的意式餐厅</h2>
-                                            <p class="waterfaill-title">rosso pomodoro <span> 美食</span></p>
-                                            <p>30年前，3个热爱意大利传统美食的朋友在比萨饼的发源地，意大利那波勒斯市创立了红番茄品牌。第一家餐厅开设于市中心的Vittorio Emanuele大街，在随后的几十年里，红番茄餐厅在意大利和全球开店超过70家，遍布欧洲，北美甚至是亚洲的日本和沙特。</p>
-                                            <p>餐厅的主打当然是比萨饼，各种不同的经典口味配合应季的食谱。精选各种优质食材甚至是用水，其中不乏众多符合国际慢食协会标准的产品。</p>
-                                            <p>作为少数可以取得成功的意大利连锁餐厅，红番茄的秘诀，是用与烹饪技巧关联性很小的比萨饼作为主打产品。精心的设计和装饰使餐厅不再仅是果腹充饥的地方，而更是可以从中获得舒适享受的场所。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_1.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/2.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/2.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/3-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/3-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/3-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>DOLZ冰淇淋 - 传统意式Gelato的新玩法</h2>
-                                            <p class="waterfaill-title">Gelateria Dolz <span>美食</span></p>
-                                            <p>传统口味的意大利冰淇淋也可以由客户自己动手自制了，这是诞生于2014年的Dolz冰淇淋的“独家配方”。虽然品牌成立仅仅两年，但是其背后的经营方却是一个拥有超过30年冰淇淋制作与销售经验的专业团队。</p>
-                                            <p>Dolz冰淇淋特别强调消费的体验感，让客户自己按照需要的口味和数量“亲手制作”冰淇淋。客户首先会自取一个甜筒或者小纸杯，在自助冰淇淋机前选择自己喜欢的口味和数量挤入甜筒或纸杯中，最后在自己加上糖浆，坚果，饼干碎，新鲜水果或者奶油。最后将成品拿到收款台进行称重并付款。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_3.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/3.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/3.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/5-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/5-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/5-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>米兰Ego Chocolat - 全新理念的巧克力概念店 </h2>
-                                            <p class="waterfaill-title">Ego Chocolat <span> 时尚</span></p>
-                                            <p>Ego Chocolat是世代经营甜点生意的意大利Lulini家族的全新品牌。在上个世纪初期，家族经营的第一家甜点店在开张，并且在Mantova市中心的主要街道上用流动售货车销售手工冰淇淋。随着位于米兰市的Piave甜点店的开业，跻身米兰乃至全意大利顶级甜点店行列成为了家族为之奋斗的目标。</p>
-                                            <p>今日，家族企业Italian Pastry Project公司主要生产高端意式手工甜点，采用高品质的原材料并且在制作工艺上保持家族多年的传统。Ego Chocolat Milano是公司最近推出的以巧克力为主题的概念店：将意大利创意与巧克力，冰淇淋以及手工甜点相结合以全新的方式进行演绎。销售店面和制作工坊相结合的方式使得客户在获得可口美味的同时，也可以亲身体验带来欢乐与满足感的巧克力文化。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_5.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-arrow">
-                            <button class="waterfall-close">
-                                <img src="../images/contents/close_normal.png">
-                                <img src="../images/contents/close_hover.png" class="_hover ">
-                            </button>
-                            <button class="waterfall-next right" role="button">
-                                <img src="../images/contents/next_normal.png">
-                                <img src="../images/contents/next_hover.png" class="_hover ">
-                                <img src="../images/contents/next_disable.png" class="waterShows">
-                            </button>
-                            <button class="waterfall-prev left" role="button">
-                                <img src="../images/contents/prev_normal.png">
-                                <img src="../images/contents/prev_hover.png" class="_hover ">
-                                <img src="../images/contents/prev_disable.png" class="waterShows">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class=" wf-parents " data-sw="3">
-                    <div class="waterfall">
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_4.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Natura Sì
-                                    <span>健康</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Natura Sì 有机产品市场的“超级”模式
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="waterfall-popup clearfix">
-                        <div class="water-parent">
-                            <div id="carousel-rop-3" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="../images/contents/brand_mobile/4.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/4.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/4-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/4-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/4-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Natura Sì - 有机产品市场的“超级”模式</h2>
-                                            <p class="waterfaill-title">Natura Sì <span> 健康</span></p>
-                                            <p>Natura si是意大利最大的有机产品连锁超市，2009年在意大利维罗纳由成立于1992年的意大利革新研究会（1994年更名为natura si）与行业最大的批发商Ecor公司联合组建。公司2015年营业额达到3亿3千万欧元。</p>
-                                            <p>第一家natura si品牌有机天然产品超市于1994年开业，至今已开设超过100家。在超市内有超过4000种通过认证的天然有机食品在售，每一种产品都以尊重自然环境，维护人类健康，保护动物权益的方式生产，并通过权威质检机构的严格审查并最终认证。产品中还包括一系列专门针对儿童的产品，同时还有无麸质食品（Gluten-free）和针对绝对素食主义者食品。natura si有机超市希望帮助每一个人选择有利于自身健康的产品，倡导更健康的饮食文化。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_4.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-arrow">
-                            <button class="waterfall-close">
-                                <img src="../images/contents/close_normal.png">
-                                <img src="../images/contents/close_hover.png" class="_hover ">
-                            </button>
-                            <button class="waterfall-next right" role="button">
-                                <img src="../images/contents/next_normal.png">
-                                <img src="../images/contents/next_hover.png" class="_hover ">
-                                <img src="../images/contents/next_disable.png" class="waterShows">
-                            </button>
-                            <button class="waterfall-prev left" role="button">
-                                <img src="../images/contents/prev_normal.png">
-                                <img src="../images/contents/prev_hover.png" class="_hover ">
-                                <img src="../images/contents/prev_disable.png" class="waterShows">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class=" wf-parents " data-sw="4">
-                    <div class="waterfall">
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_9.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Kasanova
-                                    <span>设计</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Kasanova – 意大利版的宜家家居
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="waterfall-popup clearfix">
-                        <div class="water-parent">
-                            <div id="carousel-rop-4" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="../images/contents/brand_mobile/5.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/5.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/9-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/9-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/9-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Kasanova - 意大利版的宜家家居</h2>
-                                            <p class="waterfaill-title">Kasanova <span> 时尚</span></p>
-                                            <p>1968年，为了维持生计，年轻的Giannina Fontana在自己的父亲—一位家用百货的游商去世之后，开始了自己的创业之路。从上世纪70年代开始，她举债购地在伦巴第大区的Arcore小镇建立了一间批发仓库，主营家庭日用品，灶具和五金90年代是她事业的转折期，Giannina Fontana预见到自己所经营的日用品行业正在转型，因此选择特许经营方式。1994年， “Kasanova，爱家的人”连锁品牌正式成立，由此开始了与意大利以及国际最为权威的供应商之间的紧密合作。这一连锁品牌的出现可谓一个（填补了市场空白的）巨大的革命，因为在当时的家庭用品市场上，只有高档的精品瓷器商店和低端的露天集市。</p>
-                                            <p>目前，kasanova拥有200家零售店面，员工超过1000人。公司的产品线也扩展至家居饰品领域。除了kasanova之外，还有kasanova+，家居用品奥特莱斯，树上的家等子品牌，目前距离登陆资本市场只有一步之遥。</p>
-                                        </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_9.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-arrow">
-                            <button class="waterfall-close">
-                                <img src="../images/contents/close_normal.png">
-                                <img src="../images/contents/close_hover.png" class="_hover ">
-                            </button>
-                            <button class="waterfall-next right" role="button">
-                                <img src="../images/contents/next_normal.png">
-                                <img src="../images/contents/next_hover.png" class="_hover ">
-                                <img src="../images/contents/next_disable.png" class="waterShows">
-                            </button>
-                            <button class="waterfall-prev left" role="button">
-                                <img src="../images/contents/prev_normal.png">
-                                <img src="../images/contents/prev_hover.png" class="_hover ">
-                                <img src="../images/contents/prev_disable.png" class="waterShows">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class=" wf-parents " data-sw="5">
-                    <div class="waterfall">
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_2.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    oltre
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Oltre - 意大利白领女性的最爱
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_6.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Freddy
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Freddy - 网红塑型专家
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_7.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    primigi
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Primigi童装, 0-14岁意式穿搭解决方案
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_8.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    DIS
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    迪斯手工制鞋
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_12.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    primadonna
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Primadonna - 日售万件的时尚女鞋&包袋
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waterfall-items col-xs-6 col-sm-4">
-                            <div class="waterfall-bg">
-                                <div class="waterfall-items-images">
-                                    <img src="../images/contents/content_brand_13.png" alt="">
-                                </div>
-                                <div class="waterfall-items-year">
-                                    Valerio1966
-                                    <span>时尚</span>
-                                </div>
-                                <div class="waterfall-items-information">
-                                    Valerio 1966 - “高定范”的男女正装
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="waterfall-popup clearfix">
-                        <div class="water-parent">
-                            <div id="carousel-rop-5" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="../images/contents/brand_mobile/8.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/8.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/2-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/2-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                            <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/2-2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="waterfaill-introction col-sm-8">
-                                                <h2>Oltre - 意大利白领女性的最爱</h2>
-                                                <p class="waterfaill-title">oltre <span> 时尚</span></p>
-                                                <p>意大利女装品牌Oltre隶属于Miroglio时装集团，该集团成立于1947年，是意大利最大的纺织面料及成衣零售集团之一，也是欧洲服装市场为数不多的几个集面料生产、服装设计、终端销售为一体的集团之一，对女装市场变化有着快速、敏捷的反应。集团旗下拥有11大女装品牌，超过1300家单一品牌专卖店和5000家合作商户。</p>
-                                                <p>Oltre品牌女装创立于2000年，定位于成熟的时尚白领女性。产品线从正装到休闲，设计风格简洁，色彩稳重。目前该品牌已在意大利境内开店超过200家。</p>
-                                                <p>与此同时，迪斯也在米兰最时尚购物区的Spiga大街及意大利全境和欧洲其他国家的多个城市开设了多家实体店面，展示皮料和鞋型样本并提供更为高端的量脚定制服务。</p>
-                                            </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_2.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/7.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/7.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/6-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/6-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                            <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/6-2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="waterfaill-introction col-sm-8">
-                                                <h2>Freddy - 从意大利国家体操队供应商到网红塑型专家</h2>
-                                                <p class="waterfaill-title">Freddy <span> 时尚</span></p>
-                                                <p>1976年，Carlo Freddi创建了名为La Danza的制鞋公司，专业生产舞蹈及体操专用鞋。进入80年代以后，随着欧洲健身运动的逐步流行，公司开始生产专业健身服装。把并从90年代开始，成为意大利及法国有氧运动协会，意大利体操协会，意大利体育舞蹈协会，斯卡拉剧院舞蹈团及伦敦芭蕾舞团等欧洲各大体操及舞蹈团体的官方合作伙伴及赞助商。</p>
-                                                <p>除了专业体操和舞蹈领域，Freddy公司还推出生活时尚系列服饰，特别是经典的WR.UP系列，凭借其完美的塑形能力，被众多女性消费者称为“蜜桃臀塑型裤”，也成为公司最受欢迎，最为畅销的产品系列。</p>
-                                                <p>目前Freddy公司已经在欧洲全境，日本，韩国，澳洲，俄罗斯等国家和地区开设了超过1000家专卖店。</p>
-                                            </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_6.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/11.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/11.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/7-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/7-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                            <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/7-2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="waterfaill-introction col-sm-8">
-                                                <h2>Primigi童装 - 0-14岁意式穿搭解决方案</h2>
-                                                <p class="waterfaill-title">Primigi <span> 时尚</span></p>
-                                                <p>当1975年，David和Renato Mazzocconi两兄弟成立了Imac公司，初期只是承接一些其他鞋履品牌的外包加工订单。公司随后逐步发展壮大，并将科技创新作为主攻的方向，同时也日渐走向国际化。</p>
-                                                <p>2001年，公司收购了IGI鞋业科技公司及该公司童鞋品牌PRIMIGI。这一品牌自1976年创立以来，一直是高科技，精选材料和意大利风格的代名词。</p>
-                                                <p>自2007年开始，公司开始开设Primigi单一品牌童装店，在销售童鞋的同时，也将0-14岁儿童的服装与配饰一起进行销售，取得了不俗的销售业绩。目前Primigi品牌专卖店在全球已超过300家。</p>
-                                                <p>Imac集团目前还拥有另外两个品牌，分别为成年男女服装鞋履品牌IGI&Co，以及舒适功能鞋品牌Enval Soft。2015年，Imac共计共销售8.800.000双鞋履以及4.700.000件服装，总营业额达240.000.000欧元。</p>
-                                            </div>
-                                        </div>
-                                        <img src="../images/contents/content_brand_7.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/6.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/6.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/8-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/8-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                            <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/8-2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="waterfaill-introction col-sm-8">
-                                                <h2>迪斯手工制鞋 - 百年匠心与互联网联姻</h2>
-                                                <p class="waterfaill-title">DIS <span> 时尚</span></p>
-                                                <p>“迪斯鞋业”的创始人安德烈和弗郎西斯科兄弟，来自意大利乃至欧洲最重要的皮鞋产区-马尔凯大区。Gucci，Prada，Tod’s，Versace等意大利奢侈品品牌的鞋履生产厂均设在这个区域。来自制鞋世家的两兄弟毕业于高等院校经济及互联网科技专业，于2013年创立了全新的品牌，将“意大利制造”的高品质与互联网可以相结合，获得巨大的成功。</p>
-                                                <p>迪斯并不销售标准化的成品皮鞋，而是根据每一位客户的需求和尺码为其量身制作。客户在测量了自己的尺码之后便可以登录公司的网站，通过在线系统自行选择自己喜欢的皮鞋款式。从色泽到皮质，从鞋帮到鞋底甚至是鞋带，客户都可以按照自己的喜好来任意组合专属于自己，独一无二的鞋履。</p>
-                                                <p>与此同时，迪斯也在米兰最时尚购物区的Spiga大街及意大利全境和欧洲其他国家的多个城市开设了多家实体店面，展示皮料和鞋型样本并提供更为高端的量脚定制服务。</p>
-                                                <img src="../images/contents/content_brand_8.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/9.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/9.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/12-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/12-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/12-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Primadonna - 日售万件的时尚女鞋&包袋</h2>
-                                            <p class="waterfaill-title">Primadonna <span> 时尚</span></p>
-                                            <p>Primadonna品牌于2000年由有着数十年制鞋行业经验的Tatarella家族所创建。公司总部位于意大利南部海港城市巴里，而设计与研发中心则设于时尚之都米兰。</p>
-                                            <p>品牌定位时尚女性客户，主打女鞋，女款包袋及皮具配件等产品。Primadonna与知名设计师的合作，其产品具有典型的简约时尚的意大利风格。</p>
-                                            <p>目前品牌开店超过330家，每天销售超过10000件产品。</p>
-                                        </div>
-                                        
-                                        </div><img src="../images/contents/content_brand_12.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/contents/brand_mobile/10.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        <!-- <img src="../images/contents/brand_pc/10.jpg" alt="" class="hidden-xs"> -->
-                                        <div class="shopofshops_tl clearfix">
-                                            <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                <img src="../images/contents/brand_pc_n/13-3.jpg" alt="">
-                                            </div>
-                                            <div class="shopofshops_topImage hidden-xs col-sm-8 col-sm-offset-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/13-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shopofshops_bl clearfix">
-                                        <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                            <div class="shopofShopBg">
-                                                <img src="../images/contents/brand_pc_n/13-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="waterfaill-introction col-sm-8">
-                                            <h2>Valerio 1966 - “高定范”的男女正装</h2>
-                                            <p class="waterfaill-title">Valerio 1996 <span> 时尚</span></p>
-                                            <p>Valerio 1966 是诞生于2016年的全新品牌。它与Primadonna同属于Tatarella家族企业集团。</p>
-                                            <p>与Primadonna品牌相比，Valerio1966定位于更为高端的男女正装与鞋履，面向对于衣着个性化有着更为严苛要求的客户群体。通过精湛的做工，令产品达到“私人定制”的效果。</p>
-                                            <p>目前品牌开设5家专卖店，与Primadonna形成产品线的互补。</p>
-                                        </div>
-                                        
-                                        </div>
-                                        <img src="../images/contents/content_brand_13.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                    </div>
+                <div class="about-parther">
+                <h2 class="title-abouth2">
+                       合作伙伴 
+                    </h2>
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo1.png" alt="">
+                                </div>
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>中国连锁经营协会</h2>
+                                    <p>中国连锁经营协会于1997年在民政部注册成立，是连锁经营领域唯一的全国性行业组织，目前，拥有企业会员1000余家，连锁店铺20万个，包括本土和跨国零售商、特许加盟企业、供应商等。</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="waterfall-arrow">
-                            <button class="waterfall-close">
-                                <img src="../images/contents/close_normal.png">
-                                <img src="../images/contents/close_hover.png" class="_hover ">
-                            </button>
-                            <button class="waterfall-next right" role="button">
-                                <img src="../images/contents/next_normal.png">
-                                <img src="../images/contents/next_hover.png" class="_hover ">
-                                <img src="../images/contents/next_disable.png" class="waterShows">
-                            </button>
-                            <button class="waterfall-prev left" role="button">
-                                <img src="../images/contents/prev_normal.png">
-                                <img src="../images/contents/prev_hover.png" class="_hover ">
-                                <img src="../images/contents/prev_disable.png" class="waterShows">
-                            </button>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo2.png" alt="">
+                                </div>
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>中欧创新中心</h2>
+                                    <p>中国连锁经营协会于1997年在民政部注册成立，是连锁经营领域唯一的全国性行业组织，目前，拥有企业会员1000余家，连锁店铺20万个，包括本土和跨国零售商、特许加盟企业、供应商等。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo3.png" alt="">
+                                </div>
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>米兰特许经营博览会</h2>
+                                    <p>有着超过30年历史的米兰特许经营博览会是欧洲领先的零售/特许经营行业展会，该展会汇集了意大利及全欧洲最优秀的2000余个特许经营品牌。</p>
+                                    <p>每年参展的企业超过200家，观众达到15000人次。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo4.png" alt="">
+                                </div>
+
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>米兰国际展览中心</h2>
+                                    <p>米兰国际展览中心是世界上最大的展览中心，也是世界上设备最先进的展览场地，在国家上有着举足轻重的地位。著名的米兰国际家具展，米兰时装周，米兰设计周等一系列世界级展会均在此举行。在2015年米兰世博会期间，米兰国际展览中心也承办了部分展览任务。</p>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    <div class=" wf-parents " data-sw="6">
-                        <div class="waterfall">
-                            <div class="waterfall-items col-xs-6 col-sm-4">
-                                <div class="waterfall-bg">
-                                    <div class="waterfall-items-images">
-                                        <img src="../images/contents/content_brand_10.png" alt="">
-                                    </div>
-                                    <div class="waterfall-items-year">
-                                        the merchant of venice
-                                        <span>休闲</span>
-                                    </div>
-                                    <div class="waterfall-items-information">
-                                        威尼斯商人 - 香水与玻璃艺术的邂逅
-                                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo5.png" alt="">
                                 </div>
-                            </div>
-                            <div class="waterfall-items col-xs-6 col-sm-4">
-                                <div class="waterfall-bg">
-                                    <div class="waterfall-items-images">
-                                        <img src="../images/contents/content_brand_11.png" alt="">
-                                    </div>
-                                    <div class="waterfall-items-year">
-                                        Vibram Fivefingers
-                                        <span>休闲</span>
-                                    </div>
-                                    <div class="waterfall-items-information">
-                                        Vibram Fivefingers – 再一次改写鞋类历史的创新设计
-                                    </div>
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>米兰理工大学</h2>
+                                    <p>米兰理工大学创建于1863年，是一所有这个悠久历史，师资力量极其雄厚的大学，在建筑和设计界享有盛名。在意大利理工科方面排名第一，是意大利最大也是最负盛名的理工科大学。该校设计学院在零售商业战略设计方面的研究处于全球领先地位。</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="waterfall-popup clearfix">
-                            <div class="water-parent">
-                                <div id="carousel-rop-6" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                            <img src="../images/contents/brand_mobile/12.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                            <!-- <img src="../images/contents/brand_pc/12.jpg" alt="" class="hidden-xs"> -->
-                                            <div class="shopofshops_tl clearfix">
-                                                <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                    <img src="../images/contents/brand_pc_n/10-3.jpg" alt="">
-                                                </div>
-                                                <div class="shopofshops_topImage hidden-xs col-sm-8">
-                                                    <div class="shopofShopBg">
-                                                        <img src="../images/contents/brand_pc_n/10-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/10-2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="waterfaill-introction col-sm-8">
-                                                <h2>威尼斯商人 - 香水与玻璃艺术的邂逅</h2>
-                                                <p class="waterfaill-title">the merchant of venice <span> 休闲</span></p>
-                                                <p>威尼斯是世界香水文化的发源地之一，这个曾经的海上王国通过海洋将香水文化传播到全世界。 “威尼斯商人”品牌建立于2011年，并于2012年在威尼斯本岛上一间建造于1600年的古老药店内，开设了首家旗舰店。</p>
-                                                <p>威尼斯商人定位于香水领域的奢侈品，除了经神秘配方调制的香水本身，由驰名世界的威尼斯穆拉诺玻璃制成的香水瓶，也堪称艺术精品。</p>
-                                                <p>国际知名的意大利舞台剧布景大师Pier Luigi Pizzi和另一位零售设计的大师Paolo Lucchetta分别为品牌设计了古典与现代两种风格的店面。</p>
-                                            </div>
-                                            <img src="../images/contents/content_brand_10.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        </div>
-                                        <div class="item">
-                                            <img src="../images/contents/brand_mobile/13.jpg" alt="" class="hidden-sm hidden-lg hidden-md">
-                                            <!-- <img src="../images/contents/brand_pc/13.jpg" alt="" class="hidden-xs"> -->
-                                            <div class="shopofshops_tl clearfix">
-                                                <div class="shopofshops_logo hidden-xs col-sm-4">
-                                                    <img src="../images/contents/brand_pc_n/11-3.jpg" alt="">
-                                                </div>
-                                                <div class="shopofshops_topImage hidden-xs col-sm-8">
-                                                    <div class="shopofShopBg">
-                                                        <img src="../images/contents/brand_pc_n/11-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="shopofshops_bl clearfix">
-                                            <div class="shopofshops_botImage clearfix hidden-xs col-sm-4">
-                                                <div class="shopofShopBg">
-                                                    <img src="../images/contents/brand_pc_n/11-2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="waterfaill-introction col-sm-8">
-                                                <h2>Vibram Fivefingers - 再一次改写鞋类历史的创新设计</h2>
-                                                <p class="waterfaill-title">Vibram Fivefingers <span> 休闲</span></p>
-                                                <p>vibram是意大利著名的橡胶生产厂商，其专门为鞋底设计的橡胶以出色的耐磨性、良好的防滑性、均匀的质地获得了世界众多制鞋厂商的认可。</p>
-                                                <p>2005年,Vibram首次在美国与欧洲推出Fivefingers。它是一种足套，真正的“第二层皮肤”，带来了对于“赤足”行走概念的革命。。</p>
-                                                <p>它革命性的创新设计让人体筋骨经络运作得更自然无束。VibramFivefingers有效地让脚变得更健康，增强足部和小腿的肌肉，增加足部运动的范围和增强足底传感接收－保持身体平衡和敏捷的重要元素；它通过促使前脚掌着地（传统的跑步鞋促使后跟着地）和更自然跑步的方式从而减少对膝盖，臀部及下背的冲击，让跑步变得更安全和健康。</p>
-                                            </div>
-                                            <img src="../images/contents/content_brand_11.png" alt="" class="hidden-sm hidden-lg hidden-md">
-                                        </div>
-                                    </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo6.png" alt="">
+                                </div>
+
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>理想家</h2>
+                                    <p>理想家项目由日本设计大师原研哉先生于2011年正式发起，是亚洲第一个以“未来居住、科技、生活方式”为课题，跨行业、跨产业、跨国界的研究平台。中国理想家项目由北京国际设计周与日本设计中心共同发起，日本设计大师原研哉先生作为总策展人。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo7.png" alt="">
+                                </div>
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>中国慢食协会</h2>
+                                    <p>中国慢食协会，是以遵循国际慢食协会的价值、准则、流程和结构于2015年1月在北京宣布成立的一个非营利性组织。慢食协会致力于保护中国传统的饮食文化，保护我国食物的生物多样性，支持可持续种植和传统加工方法，以促进社会的公平和正义，并从“食物的生产及消费体系”出发，倡导以人为本、有利社会、传承文化、保护环境的生活与生产方式。</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo8.png" alt="">
+                                </div>
+
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>国际亲子设计节</h2>
+                                    <p>国际亲自设计节起源于2014年米兰设计周场外展“儿童设计周”。经过12年的发展，亲子设计节已经成为包括儿童设计教育、母婴产业、儿童公益活动等内容丰富的跨学科、跨行业活动及传播平台。</p>
+                                    <p>“2016国际（北京）亲子设计节”于2016北京国际设计周-751国际设计节期间落户北京并以“为爱而设计”为年度主题。</p>
+                                </div>
+                                
                             </div>
-                            <div class="waterfall-arrow">
-                                <button class="waterfall-close">
-                                    <img src="../images/contents/close_normal.png">
-                                    <img src="../images/contents/close_hover.png" class="_hover ">
-                                </button>
-                                <button class="waterfall-next right" role="button">
-                                    <img src="../images/contents/next_normal.png">
-                                    <img src="../images/contents/next_hover.png" class="_hover ">
-                                    <img src="../images/contents/next_disable.png" class="waterShows">
-                                </button>
-                                <button class="waterfall-prev left" role="button">
-                                    <img src="../images/contents/prev_normal.png">
-                                    <img src="../images/contents/prev_hover.png" class="_hover ">
-                                    <img src="../images/contents/prev_disable.png" class="waterShows">
-                                </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="aboutparther-bg clearfix">
+                                <div class="about-logo col-xs-4">
+                                    <img src="../images/contents/about-new/logo9.png" alt="">
+                                </div>
+                                <div class="about-introduce col-xs-8 col-xs-offset-4">
+                                    <h2>北京国际设计周</h2>
+                                    <p>由北京市政府联合教育部、科技部、文化部共同主办的北京国际设计周活动已成功举办七届，是北京市具有国际影响力的大型文化活动。</p>
+                                    <p>北京国际设计周每年吸引参会设计师、机构代表、学术专家超过2000人，注册媒体百余家，观众超过500万人次，已成为亚洲规模最大的设计周和首都具有国际影响力、可持续发展的创意设计公共服务平台。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="about-suppot">
+                     <h2 class="title-abouth2">
+                       支持单位 
+                    </h2>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../images/contents/about-new/suppot-1.png" alt="">
+                            <h2>意大利外交部</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../images/contents/about-new/suppot-2.png" alt="">
+                            <h2>国际慢食协会</h2>
+
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../images/contents/about-new/suppot-3.png" alt="">
+                            <h2>意大利对外贸易委员会</h2>
+
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../images/contents/about-new/suppot-4.png" alt="">
+                            <h2>中国意大利商会</h2>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-contant">
+                    <h2 class="title-abouth2">
+                       联系方式 
+                    </h2>
+
+                    <div class="beijin">
+                        <p>北京环球店家网络发展有限公司 </p>
+                        <p>北京总部：北京市东城区青龙胡同1号 歌华大厦A座615</p>
+                        <p>电话：+86 10 84186071</p>
+                        <p>电子邮件： info@shopofshops.com</p>
+                    </div>
+
+                    <div class="italy">
+                        <p>意大利代表处： Via Maurizio Quadirio 23, Milan, Italy</p>
+                        <p>电话： +39 3666039848</p>
+                    </div>
+                </div>
+
+
             </div>
+        </div> 
     </main>
     @@include('../componet/footer.html')
     <script type="text/javascript" src="../vendors/jquery/jquery.min.js"></script>

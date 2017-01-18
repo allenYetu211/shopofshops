@@ -1,0 +1,172 @@
+$ff: 'Songti SC';
+$fw: 900;
+.brand-minlin{
+  padding: 50px 0 180px;
+   @media(max-width: $breakpoint-phone-max) {
+        padding: 15px 0 100px;
+    }
+  .about-information{
+    padding: 80px 0px; 
+    @media(max-width: $breakpoint-phone-max) {
+        padding: 15px 0;
+    }
+    p{
+      line-height: 30px;
+    }
+  }
+  .about-develop{
+    padding: 50px 0;
+     @media(max-width: $breakpoint-phone-max) {
+        padding: 15px 0;
+    } 
+    img{
+      width:100%;
+    }
+  }
+  .about-contact{
+    padding: 80px 100px;
+     @media(max-width: $breakpoint-phone-max) {
+        padding: 15px;
+    }
+    .about-infor{
+      height:120px;
+      display:flex;
+      align-items: center;
+      &:first-child{
+        justify-content: flex-end;
+        @media(max-width:$breakpoint-sm-max) {
+          justify-content:center;
+        }
+      }
+      @media(max-width:$breakpoint-sm-max) {
+        justify-content:center;
+      }
+      
+      img{
+        @media (min-width: $breakpoint-sm-max){
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+h2.title-abouth2 {
+  margin:0 0 40px 15px;
+  position: relative;
+  font-size: 24px;
+  font-family: $ff;
+  font-weight: $fw;
+  @media(max-width: $breakpoint-md-min) {
+          font-size: 16px;
+        } 
+  &:after{
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 4px;
+    height: 100%;
+    background-color: #FE112D;
+    content: '';
+  }
+}
+.brand-minlin{
+  background-color: #fbfbfb;
+  .mobile-liuctu{
+    text-align: center;
+    img{
+      width: 70px;
+    }
+  }
+}
+
+.about-parther{
+  margin-bottom: 80px;
+  .aboutparther-bg{
+    background-color: #fff;
+    border: 1px solid #efefef;
+    padding: 30px 0;
+    overflow: hidden;
+    margin: 10px 0;
+    .about-logo{
+        position: absolute;
+        top: 30px;
+        bottom: 30px;
+        padding-left: 30px;
+        overflow: hidden;
+      img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 45px);
+        @media(max-width: $breakpoint-md-min) {
+          width: calc(100% - 15px);
+        } 
+        @media(max-width: $breakpoint-xs-max) {
+          width: calc(100% - 100px);
+        } 
+        @media(max-width: $breakpoint-phone-max) {
+          width: calc(100% - 15px);
+        } 
+      }
+    }
+    .about-introduce{
+      padding-right: 30px;
+      @media(max-width: $breakpoint-phone-max) {
+        padding-right: 20px;
+        } 
+    }
+    h2{
+      font-size: 14px;
+      margin: 0 0 10px;
+      font-family: $ff;
+      font-weight: $fw;
+    }
+    p{
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 18px;
+      color:#1A1D27;
+    }
+  }
+}
+
+.about-suppot{
+  margin-bottom: 80px;
+  img{
+     width: 100%;
+  }
+  .row {
+    & > div {
+      @media(max-width: $breakpoint-phone-max) {
+          &:nth-child(odd) {
+            padding-right: 8px;
+          }
+          &:nth-child(even) {
+            padding-left: 8px;
+          }
+        } 
+    }
+      h2{
+      font-size: 14px;
+      font-family: $ff;
+      font-weight: $fw;
+      text-align: center;
+      margin: 10px 0 20px;
+    }
+  }
+}
+
+.about-contant{
+  p {
+    line-height: 18px;
+    color:#1A1D27;
+    font-size : 300;
+  }
+}
+
+// life
+// 

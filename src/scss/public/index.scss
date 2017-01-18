@@ -6,7 +6,7 @@
 			width:100%;
 			overflow:hidden;
 			@media(max-width:$breakpoint-phone-max) {
-						height:260px;
+						height:100vw;
 					}
 			&>img{
 				height: 100%;
@@ -23,7 +23,7 @@
 			}
 			.carousel-caption{
 					top: 50%;
-					transform: translateY(-50%);
+					transform: translateY(-40%);
 				@media(max-width:$breakpoint-phone-max) {
 					right:25%;
 					left:25%;
@@ -42,8 +42,8 @@
 					font-size:30px;
 					font-weight:100;
 					@media(max-width:$breakpoint-phone-max) {
-						font-size:14px;
-						font-weight:300;
+						font-size:20px;
+						font-weight:100;
 					}
 				}
 			}
@@ -78,7 +78,7 @@
 }
 
 .part{
-	margin-top: 5px;
+	margin-top: 2px;
 	margin-bottom: 5px;
 	.row{
 		margin-left: -20px;
@@ -92,10 +92,12 @@
 		// margin:0px 5px;
 		text-align: center;
 		position:relative;
-		margin: 5px;
+		// margin: 5px;
 		overflow: hidden;
 		padding:0;
-		width: calc(50% - 10px);
+		margin: 5px;
+		width: calc(33.333333% - 10px);
+	
 		@media(max-width:$breakpoint-xs-max) {
 			width: 100%;
 			margin: 2px 0;
@@ -108,7 +110,7 @@
 			color:#fff;
 			z-index:1;
 			h2{
-				font-size: 44px;
+				font-size: 36px;
 				font-family: "Lucida Grande","Helvetica Neue",Helvetica,Arial,sans-serif;
 				font-weight: 100;
 				margin-top: 10px;
@@ -119,14 +121,16 @@
 			}
 			h4{
 				font-size: 15px;
-				font-weight: 400;
+				font-weight: 100;
+				font-size: 20px;
+				letter-spacing: 3px;
 				@media(max-width:$breakpoint-phone-max) {
 					margin-top:5px;
 				}
 			}
 			@media(max-width:$breakpoint-xs-max) {
 				h2{
-					font-size: 32px;
+					font-size: 30px;
 					margin-top: 10px;
 				}
 				h4{
@@ -145,7 +149,7 @@
 }
 
 .footer-brand{
-	background: #f7f7f7;
+	background: #f6f6f6;
 	.footer-shoplogo{
 		margin:0 auto;
 		text-align: center;
@@ -162,7 +166,11 @@
 	.footerXSlogo{
 		width: calc(170px * 6);
     margin: 0 auto;
-    overflow: hidden
+    overflow: hidden;
+  	@media(max-width: $breakpoint-phone-max) {
+						width: auto;
+						overflow-x: auto;
+					}
 	}
 	ul{
 
@@ -170,13 +178,23 @@
 		li{
 			float: left;
 			box-sizing: content-box;
-			height: 50px;
-			padding: 10px 0px;
+			height: 70px;
 			width:170px;
 			transition: transform 0.5s;
-			&:first-child:before{
-				content:"";
-				margin:0px;
+			position: relative;
+			&:after {
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 1px;
+				height: 35px;
+				background-color:#e2e2e2;
+				content: '';
+			}
+			&:last-child:after{
+				display: none;
 			}
 			img{
 				height: 100%;
@@ -207,30 +225,7 @@
 	}
 }
 	.index_actives_bg{
-		 background:url('../images/contents/index_hero_img_1.png');
+		 background:url('../images/contents/index/banner.png');
 	     background-size: auto 100%;
 	     background-position-x: 0%;
 	 }
- //     animation: keyFrames_animations 20s infinite;
- //     			@media(max-width:$breakpoint-phone-max) {
-	// 		     animation: keyFrames_animations 10s infinite;
-	// 				}
-	// }
-
-	// @-webkit-keyframes keyFrames_animations{
-	// 	0%{
-	// 		background-position-x: 0%;
-	// 	}
-	// 	100% {
-	// 		background-position-x: 100%;
-	// 	}
-	// }
-		
-	// @keyframes keyFrames_animations{
-	// 	0%{
-	// 		background-position-x: 0%;
-	// 	}
-	// 	100% {
-	// 		background-position-x: 100%
-	// 	}
-	// }
