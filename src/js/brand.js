@@ -50,10 +50,10 @@ var initIndexBg = {
 $('.subscibe input').on('keyup', function () {
     if ($(this).val().trim() != '') {
         $(this).parent().addClass('action');
-        $(this).next().html('搜索');
+       
     } else {
         $(this).parent().removeClass('action');
-        $(this).next().html('提交');
+        
     }
 });
 
@@ -272,26 +272,150 @@ var sliding = {
          $('.waterfall-arrow').removeAttr('style').removeClass('opens')
         if ($(window).width() > 480) {
             _t.parents('.waterfall-popup').prev().slideDown('400').end().slideUp('400');
+            $('.news-introduce').find('.info').slideDown('400');
+            $('.news-introduce').find('.richchigga').slideUp('400');
         } else {
             _t.parents('.waterfall-popup').prev().show().end().hide();
+            $('.news-introduce').find('.richchigga').hide().prev().show();
         }
          if (this.showState > _t.parent().prev().children().length - 2) {
             return;
         }
         this.showState++;
-        _t.parent().prev().children().css({
-            'transform': 'translateX(-' + this.showState * 100 + '%)',
-            'transition': 'transform 0.2s'
-        });
+        $('.news-next, .news-prev').find('img:last').removeClass('shows');
     },
 
-    animations (_t) {
-        _t.parent().next().find('.water-parent').children().css('transform', 'translateX(-' + this.showState * 100 + '%)');
-    }
+    // animations (_t) {
+    //     _t.parent().next().find('.water-parent').children().css('transform', 'translateX(-' + this.showState * 100 + '%)');
+    // }
 };
 
-$("#carousel-rop-6, #carousel-rop-5, #carousel-rop-4, #carousel-rop-3, #carousel-rop-2, #carousel-rop-1").carousel({
+$("#carousel-rop-6, #carousel-rop-5, #carousel-rop-4, #carousel-rop-3, #carousel-rop-2, #carousel-rop-1, #news-information").carousel({
     interval: 0,
     pause: false,
     toggle: false
 });
+
+$('.js_moreIntroduce').on('click', function () {
+   $('.richchigga').find('.carousel').carousel($(this).parent().index());
+   $('.info').slideUp();
+   $('.richchigga').slideDown();
+   $('html,body').animate({scrollTop: $('.news-introduce').position().top + 5}, 100);
+   $('.waterfall-arrow').css('opacity', 1).find('button').show();
+   if ($(this).parent().index() === 0) {
+    $('.news-prev').find('img:last').addClass('shows');
+   } else if ($(this).parent().index() === $(this).parent().siblings().length) {
+    $('.news-next').find('img:last').addClass('shows');
+   }
+})  
+
+
+$('.news-next').on('click', function () {
+        news.newNext($(this))
+});
+
+$('.news-prev').on('click', function () {
+        news.newPrev($(this))
+});
+
+var news = {
+    newNext (_t) {
+        if ($('#news-information').find('.item:last').hasClass('active')) {
+            return
+        } else {
+            setTimeout(() => {
+             if ($('#news-information').find('.item:last').hasClass('active')) {
+                    $('.news-next').find('img:last').addClass('shows')       
+                }
+            }, 800)
+            $('#news-information').carousel('next');
+            $('.news-prev').find('img:last').removeClass('shows')       
+        }
+    },
+    newPrev (_t) {
+        if ($('#news-information').find('.item:first').hasClass('active')) {
+            return
+        } else {
+            setTimeout(() => {
+             if ($('#news-information').find('.item:first').hasClass('active')) {
+                    $('.news-prev').find('img:last').addClass('shows')       
+                }
+            }, 800)
+            $('#news-information').carousel('prev');
+            $('.news-next').find('img:last').removeClass('shows')       
+             
+        }
+
+
+    }
+};
+
+
+(function($) {
+    var props = ['Width', 'Height'],
+        prop;
+    while (prop = props.pop()) {
+        (function(natural, prop) {
+            $.fn[natural] = (natural in new Image()) ?
+                function() {
+                    return this[0][natural];
+                } :
+                function() {
+                    var
+                        node = this[0],
+                        img,
+                        value;
+
+                    if (node.tagName.toLowerCase() === 'img') {
+                        img = new Image();
+                        img.src = node.src,
+                            value = img[prop];
+                    }
+                    return value;
+                };
+        }('natural' + prop, prop.toLowerCase()));
+    }
+}(jQuery));
+$.fn.changeCenter = function(tiparents) {
+    $(this).css({
+        'position': 'absolute',
+        'top': '50%',
+        'left': '50%',
+        'transform': 'translate(-50%,-50%)'
+    })
+    tiparents ? tiparents.css('position', 'relative') : ''
+    var ww = tiparents ? tiparents.width() : $(window).width()
+    var wh = tiparents ? tiparents.height() : $(window).height()
+    $(this).each(function() {
+        var iw = $(this).naturalWidth()
+        var ih = $(this).naturalHeight()
+        if (ww > wh) {
+            if (iw > ih) {
+                var bl = iw / ih
+                $(this).css('width', ww)
+                $(this).css('height', Math.round(ww * (1 / bl)))
+                var newih = Math.round(ww * (1 / bl))
+                if (newih < wh) {
+                    var bl = ih / iw
+                    $(this).css('height', wh)
+                    $(this).css('width', Math.round(wh * (1 / bl)))
+                }
+            } else if (ih == iw) {
+                $(this).css({ 'width': ww, 'height': 'auto' })
+            } else {
+                var bl = ih / iw
+                $(this).css('height', wh)
+                $(this).css('width', Math.round(wh * (1 / bl)))
+            }
+
+        } else {
+            if (ih == iw) {
+                $(this).css({ 'width': 'auto', 'height': wh })
+            } else {
+                var bl = ih / iw
+                $(this).css('height', wh)
+                $(this).css('width', Math.round(wh * (1 / bl)))
+            }
+        }
+    })
+}

@@ -1,0 +1,68 @@
+@import './Varibles';
+.projects{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  &.news{
+  background: url('../images/contents/news/news.png') center;
+  background-size: auto 100%;
+  }
+  .contact-shopofshops{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(5,18,47,.5);
+  }
+  .contact-information{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+     @media(max-width: $breakpoint-phone-max) {
+            width: 95%;
+        }
+    .logo {
+      width: 35%;
+      margin: 0 auto;
+      margin-bottom: 85px;
+      img {
+        width: 100%;
+      }
+    }
+    .description{
+      margin-bottom: 40px;
+      h2 {
+        font-size:30px;
+        letter-spacing:0.75px;
+         @media(max-width: $breakpoint-phone-max) {
+            font-size:24px;
+        }
+      }
+      p {
+        font-size:14px;
+        letter-spacing:0.35px;
+      }
+    }
+
+    .inputEmail {
+      width: 80%;
+      margin: 0 auto;
+      input {
+        border: 1px solid #fff;
+        padding: 5px 10px;
+        height: 42px;
+        color: #333;
+      }
+      button {
+        height: 42px;
+        background-color: transparent;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}

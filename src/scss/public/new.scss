@@ -1,0 +1,126 @@
+@import './Varibles';
+.Introduction {
+  padding: 0;
+}
+.news-introduce{
+  margin: 30px 0 100px;
+  background-color: #FBFBFB;
+
+}
+.js_moreIntroduce {
+  cursor: pointer;
+}
+
+.items-introduce{
+  padding: 0 5px;
+}
+.itmes-img{
+  margin-bottom: 10px;
+  img{
+    width: 100%;
+  }
+}
+
+  div.items-introduce {
+    p{
+      &:first-child {
+         overflow:hidden; 
+          text-overflow:ellipsis;
+          display:-webkit-box; 
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:1; 
+          @media(max-width: $breakpoint-phone-max) {
+            font-size:12px;
+          }
+
+      }
+      span{
+        margin-left: 20px;
+        font-size:15px;
+        color:#ffa221;
+        @media(max-width: $breakpoint-phone-max) {
+        font-size:12px;
+      }
+      }
+      &:last-child {
+          font-size:15px;
+          color:#999999;
+          overflow:hidden; 
+          text-overflow:ellipsis;
+          display:-webkit-box; 
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:3; 
+          @media(max-width: $breakpoint-phone-max) {
+            font-size:10px;
+          }
+      }
+    }
+
+    h2 {
+        overflow:hidden; 
+        text-overflow:ellipsis;
+        display:-webkit-box; 
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:1; 
+        font-size:22px;
+        color:#111216;
+        @media(max-width: $breakpoint-phone-max) {
+        font-size:14px;
+      }
+    }
+  }
+
+
+.richchigga{
+  padding: 0 25%;
+  display: none;
+  @media(max-width:$breakpoint-xs-max) {
+  padding: 0 5%;
+  }
+  @media(max-width:$breakpoint-sm-max) {
+  padding: 0 15%;
+  }
+  @media(max-width:$breakpoint-md-max) {
+  padding: 0 20%;
+  }
+  @media(max-width:$breakpoint-phone-max) {
+  padding: 0 15px;
+  }
+}
+.News-moreqt{
+    height: 0;
+    padding-bottom: 60%;
+    margin-bottom: 40px;
+    overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+.news-title{
+  h2 {
+    font-family: "Songti SC";
+    font-weight: 700;
+    margin-bottom: 20px;
+    @media(max-width: $breakpoint-phone-max) {
+    margin-bottom: 16px;
+    min-height: 66px;
+    }
+  }
+  p {
+    color: #999;
+    span {
+      margin: 0 5px;
+    }
+  }
+  margin-bottom: 40px;
+}
+
+.News-more{
+  p{
+    font-size:13px;
+    color:#272536;
+    line-height:26px;
+    text-align:left;
+    margin-bottom: 25px;
+  }
+}

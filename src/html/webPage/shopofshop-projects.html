@@ -4,7 +4,7 @@
 <head>
  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>brands</title>
+    <title>Projects | Shopofshops</title>
     <link rel="stylesheet" type="text/css" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
@@ -33,12 +33,12 @@
                 <li> <a href="./brands.html">精选品牌</a></li>
                 <li> <a href="./business.html" >商业方案</a></li>
                 <li> <a href="./new.html">新闻资讯</a></li>
-                <li> <a href="./about.html" class="active">关于我们</a></li>
-                <li> <a href="./shopofshop-projects.html"  >项目众筹</a></li>
+                <li> <a href="./about.html">关于我们</a></li>
+                <li> <a href="./shopofshop-projects.html"  class="active">项目众筹</a></li>
             </ul>
         </nav>
     </header>
-   <div class="mobile-nav-information hidden-sm hidden-lg hidden-md">
+    <div class="mobile-nav-information hidden-sm hidden-lg hidden-md">
         <div class="nav-introduce">
             <a href="./service.html">
                 <p>Services</p>
@@ -76,49 +76,35 @@
             </a>
         </div>
     </div>
-    <main>
-        <div class="brand-stemplan">
-            <img src="../images/contents/hero_img_aboutus.png">
-            <div class="brand-stemplan-title">
-                <img src="../images/contents/hero_title_aboutus.png" alt="">
-            </div>
-        </div>
-        <div class="brand-minlin">
-            <div class="container">
-                <div class="about-information">
-                    <p>店家公司业务覆盖全球, 为准备进入中国的最佳商业品牌寻找特许 经营总代理。通过米兰特许经营博览会,店家公司与意大利2500多 家特许经营企业建立了合作伙伴关系,从而搭建起中意两国之间相 互合作的桥梁。同时店家公司还与中国最重要的地产企业合作,为特 许经营企业在选址等方面提供一系列必要的服务。店家公司业务范 围涉及食品餐饮健康、母婴、家居装饰、时尚轻奢侈品和社区服务 等多个领域。</p>
+    <main class="projects">
+        <img class="pro-bj" src="../images/contents/shopofshop-projects/shopofshop-projects-bg.png">
+        <div class="contact-shopofshops">
+            <div class="contact-information">
+                <div class="logo">
+                    <img src="../images/contents/index_hero_title_1.png">
                 </div>
-                <div class="about-develop">
-                    <div class="hidden-xs ">
-                        <img src="../images/contents/content_aboutus_1.png">
-                    </div>
-                    <div class="hidden-lg hidden-md hidden-sm mobile-liuctu">
-                        <img src="../images/contents/content_aboutus-mobile_1.png">
-                    </div>
+
+                <div class="description">
+                   <h2>“项目众筹”正在建设中</h2>
+                   <p>您可以留下邮箱获取我们的最新动态</p>             
                 </div>
-                <div class="about-contact">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-4 about-infor">
-                            <p>北京办事处：北京市东城区歌华大厦
-                                <br/>米兰办事处：意大利米兰xxxxxxxxxx</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 about-infor  hidden-xs">
-                            <img src="../images/contents/content_aboutus_2.png">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 about-infor  hidden-xs">
-                            <p>电子邮箱：info@shopofshops.com
-                                <br/>扫码关注微信公共号：shopofshops</p>
-                        </div>
-                    </div>
+
+                <div class="inputEmail">
+                    <input class="col-xs-9" type="email">
+                    <button class="col-xs-3">订阅</button>
                 </div>
             </div>
         </div>
+        
     </main>
-    @@include('../componet/footer.html')
+
     <script type="text/javascript" src="../vendors/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../vendors/masonry/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript " src="../js/app.js"></script>
+    <script>
+        $('.pro-bj').changeCenter($('.projects'));
+    </script>
 </body>
 
 </html>

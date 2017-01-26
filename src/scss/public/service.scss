@@ -1,0 +1,66 @@
+@import './Varibles';
+.service-shops{
+  background-color: #f6f6f6;
+  padding: 60px 0;
+  .col-xs-6{
+    @media(max-width: $breakpoint-xs-max) {
+      padding: 5px;
+    }
+  }
+}
+.service-card{
+  text-align: center;
+  margin: 0 0 15px 0;
+  padding: 35px;
+  background-color:#fff;
+  height: 320px;
+  border: 1px solid #EFEFEF;
+  @media(max-width: $breakpoint-md-max) {
+      height: 340px;
+    }
+  @media(max-width: $breakpoint-sm-max) {
+    height: 400px;
+  }
+  @media(max-width: $breakpoint-xs-max) {
+    height:320px;
+    padding: 15px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 900;
+    font-family: $st;
+  }
+  .service-icon {
+    margin-bottom: 45px;
+    position: relative;
+    &:after{
+      display: block;
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-51%);
+      width: 30px;
+      height: 3px;
+      background-color: #fe112d;
+      content: '';
+    }
+  }
+  p{
+    text-align: left;
+    font-size:16px;
+    letter-spacing:3px;
+    color:#535353;
+   @media(max-width: $breakpoint-xs-max) {
+    font-size:14px;
+    letter-spacing:2px;
+
+    }
+  }
+  .service-icon{
+    img{
+      height: 35px;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+@import './Varibles';
 .wf-parents {
     position: relative;
     margin: 0 auto;
@@ -49,9 +50,6 @@
         margin: 0;
         padding: 0;
         text-align: center;
-        // @media (max-width:$breakpoint-xs-max) {
-        //         text-align:left;
-        //     }
         .brands-items-search {
             position: absolute;
             right: 15px;
@@ -60,7 +58,7 @@
             height: 30px;
             transform: translateY(-50%);
             line-height: 0;
-            @media (max-width:$breakpoint-xs-max) {
+            @media (max-width: $breakpoint-xs-max) {
                 width: 16px;
                 height: 16px;
                 right: 15px;
@@ -83,7 +81,7 @@
             }
             @media (max-width:$breakpoint-xs-max) {
                 padding: 0 13px;
-                font-size:12px;
+                font-size: 12px;
             }
         }
     }
@@ -93,7 +91,6 @@
     @media (max-width: $breakpoint-xs-max) {
         padding: 0;
     }
-
 }
 
 .brands-waterfall-informations {
@@ -101,19 +98,13 @@
     min-height: 100vh;
     padding-top: 30px;
     padding-bottom: 200px;
-     @media(max-width: $breakpoint-phone-max) {
-       min-height: 50vh;
-    } 
+    @media(max-width: $breakpoint-phone-max) {
+        min-height: 50vh;
+    }
 }
 
-
 .brands-waterfall {
-    // max-width: 1140px;
-    // margin: 10px auto;
     .waterfall {
-        // display:none;
-        // max-width:1200px;
-        // width: 80%;
         position: relative;
         &.open {
             display: block;
@@ -123,16 +114,15 @@
         float: left;
         margin: 10px 0;
         padding: 0 10px;
-        .waterfall-bg{
-          background-color: #FFFFFF;
-          padding-bottom:20px;
-          transition: box-shadow 0.5s;
-          &:hover{
-            box-shadow:0 4px 12px rgba(198,91,0,0.3);
-          }
+        .waterfall-bg {
+            background-color: #FFFFFF;
+            padding-bottom: 20px;
+            transition: box-shadow 0.5s;
+            &:hover {
+                box-shadow: 0 4px 12px rgba(198, 91, 0, 0.3);
+            }
         }
-        @media(max-width: $breakpoint-xs-max) {
-        }
+        @media(max-width: $breakpoint-xs-max) {}
         @media(max-width: $breakpoint-phone-max) {
             padding: 0px 3px;
         }
@@ -147,8 +137,8 @@
             margin-left: 5px;
         }
         @media(max-width: $breakpoint-phone-max) {
-          font-size:10px;
-          padding: 10px 3px;
+            font-size: 10px;
+            padding: 10px 3px;
         }
     }
     .waterfall-items-images {
@@ -160,11 +150,12 @@
         font-size: 18px;
         padding: 0px 12px;
         @media(max-width: $breakpoint-phone-max) {
-          font-size:12px;
-          padding: 0 3px;
+            font-size: 12px;
+            padding: 0 3px;
         }
     }
 }
+
 .waterfall-popup {
     overflow: hidden
 }
@@ -198,9 +189,10 @@
 .waterfall-popup img {
     width: 100%
 }
+
 .waterfaill-introction {
     padding: 50px 75px;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 @media(max-width:480px) {
@@ -253,16 +245,20 @@
     display: flex;
     flex-flow: column;
     transition: opacity 0.5s;
-    &.opens {
-        opacity: 1;
-    }
-}
-
-@media(max-width:480px) {
-    .waterfall-arrow {
+    @media(max-width: $breakpoint-phone-max) {
         flex-flow: row-reverse;
         top: 150px;
         right: 3%
+    }
+    &.news {
+        @media(max-width: $breakpoint-phone-max) {
+            flex-flow: row-reverse;
+            top: 125px;
+            right: 3%
+        }
+    }
+    &.opens {
+        opacity: 1;
     }
 }
 
@@ -273,7 +269,7 @@
     background-color: transparent;
     position: relative;
     padding: 0;
-    img{
+    img {
         width: 100%;
     }
 }
@@ -305,14 +301,14 @@
     opacity: 0
 }
 
-
 @media(min-width:480px) {
     .waterfall-arrow button:hover ._hover {
         opacity: 1
     }
 }
+
 .waterfall-arrow {
-    .waterShows{
+    .waterShows {
         position: absolute;
         width: 100%;
         left: 0;
@@ -324,46 +320,44 @@
         }
     }
 }
+
 .shopofshops_logo,
 .shopofshops_topImage,
 .shopofshops_botImage,
- {
+{
     padding: 0;
 }
 
-.shopofshops_tl{
+.shopofshops_tl {
     position: relative;
 }
-.shopofshops_logo{
-    // height: 0;
-    // padding-bottom: 25.3%;
-    // overflow: hidden;
-    position:static;
+
+.shopofshops_logo {
+    position: static;
     img {
         position: absolute;
         width: 33.3333%;
         top: 50%;
         transform: translateY(-50%);
     }
-
 }
 
 .shopofshops_topImage {
-    // height: 0;
-    // padding-bottom: 25.3%;
     overflow: hidden;
 }
-.carousel-inner{
-    .item{
+
+.carousel-inner {
+    .item {
         overflow: hidden;
     }
 }
-.shopofShopBg{
+
+.shopofShopBg {
     position: relative;
     transform: translateX(-100%);
     transition: transform 0.5s;
     overflow: hidden;
-    &:after{
+    &:after {
         position: absolute;
         content: '';
         display: block;
@@ -371,15 +365,16 @@
         right: 0;
         bottom: 0;
         top: 0;
-        background-color:#FF520E;
+        background-color: #FF520E;
         transition: transform 0.35s 0.5s;
     }
 }
-.active{
-    .shopofShopBg{
-         transform: translateX(0%);
-         &:after{
+
+.active {
+    .shopofShopBg {
+        transform: translateX(0%);
+        &:after {
             transform: translateX(100%);
-         }
-   }
+        }
+    }
 }

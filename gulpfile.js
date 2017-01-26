@@ -6,7 +6,7 @@ var imagemin = require('gulp-imagemin');          //图片压缩
 var babel = require('gulp-babel');                //编译es6 
 var uglify = require('gulp-uglify');              //Js 文件压缩 
 var connect = require('gulp-connect');            //自动刷新
-var autoprefixer = require('gulp-autoprefixer');  //css3自动添加前缀
+// var autoprefixer = require('gulp-autoprefixer');  //css3自动添加前缀
 
 
 // 设置监听任务
@@ -39,11 +39,11 @@ gulp.task('connect', function() {
 
 // 编译scss
 gulp.task('scss', function() {
-    return gulp.src('./src/scss/style.scss')
-        .pipe(autoprefixer({
-            cascade: true,
-            remove: true
-        }))
+    return gulp.src('./src/scss/**/*.scss')
+        // .pipe(autoprefixer({
+        //     cascade: true,
+        //     remove: true
+        // }))
         .pipe(scss())
         .pipe(concat('style.css'))
         // .pipe(shrink())

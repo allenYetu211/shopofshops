@@ -1,0 +1,191 @@
+@import './Varibles';
+.business-shops {
+  padding: 60px 0 150px;
+  background-color: #f6f6f6;
+  div.col-sm-4.col-xs-12 {
+    &:nth-child(1) > .store {
+      background-image: url('../images/contents/business/store-1.png');
+    }
+    &:nth-child(2) > .store {
+      background-image: url('../images/contents/business/store-2.png');
+    }
+    &:nth-child(3) > .store {
+      background-image: url('../images/contents/business/store-3.png');
+    }
+  }
+}
+.title {
+    color: #444444;
+    text-align: center;
+    margin-bottom: 100px;
+    @media(max-width: $breakpoint-phone-max) {
+         margin-bottom: 50px;
+        }
+    position:relative;
+    &:after{
+      display: block;
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 55px;
+      height: 3px;
+      background-color: #fe112d;
+      content: '';
+      @media(max-width: $breakpoint-phone-max) {
+         width: 35px;
+        }
+    }
+    h2 {
+       font-size: 38px;
+        @media(max-width: $breakpoint-phone-max) {
+         font-size: 24px;
+        }
+    }
+    p {
+        font-size: 30px;
+        letter-spacing: 0.75px;
+        margin: 0;
+        @media(max-width: $breakpoint-phone-max) {
+         font-size: 16px;
+        }
+        span {
+            font-size: 71px;
+            color: #fe112d;
+            letter-spacing: 1.77px;
+            vertical-align: middle;
+            margin-right: 15px;
+            @media(max-width: $breakpoint-phone-max) {
+               font-size: 51px;
+              }
+        }
+    }
+}
+
+.store {
+    padding: 30px;
+    background-color: #fff;
+    margin: 0 0 15px 0;
+    padding: 35px;
+    background-color: #fff;
+    height: 320px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    background-repeat:  no-repeat;
+    background-position: right -30px bottom;
+    background-size: 40%;
+    @media(max-width: $breakpoint-md-max) {
+        height: 340px;
+    }
+    @media(max-width: $breakpoint-sm-max) {
+        height: 400px;
+    }
+    @media(max-width: $breakpoint-xs-max) {
+        height: auto;
+        padding: 15px;
+        background-position: 10px 50%;
+        background-size: 20%;
+    }
+    h4 {
+        font-size: 20px;
+        color: #000000;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-bottom: 22px;
+        @media(max-width: $breakpoint-xs-max) {
+        text-align: left;
+        
+      }
+    }
+    p {
+        font-size: 15px;
+        color: #727172;
+        letter-spacing: 0.37px;
+    }
+    .mobile-introduce{
+       @media(max-width: $breakpoint-xs-max) {
+        width:75%;
+        margin-left: 25%;
+      }
+    }
+}
+
+.concept {
+  margin-top: 100px;
+}
+
+.concept-io {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        .concept-iosEn {
+          overflow: hidden;
+        }
+        @media(max-width: $breakpoint-xs-max) {
+            width: 100%;
+            margin: 2px 0;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            z-index: 1;
+            @media(max-width: $breakpoint-phone-max) {
+               width: 100%;
+              }
+            h2 {
+              font-size:24px;
+              color:#ffffff;
+              letter-spacing:0.72px;
+              line-height:46px;
+              position: relative;
+            
+              &:after {
+                  display: block;
+                  position: absolute;
+                  bottom: -10px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  background-color: #ffffff;
+                  width:27px;
+                  height:2px;
+                  content: '';
+                  @media(max-width:$breakpoint-xs-max) {
+                    bottom: 0px;
+                    height:1px;
+                  }
+              }
+                @media(max-width: $breakpoint-phone-max) {
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+            }
+            p {
+                font-size:20px;
+                font-weight: 300;
+                color:#ffffff;
+                letter-spacing:0.6px;
+                line-height:46px;
+                @media(max-width:$breakpoint-xs-max) {
+                font-size:14px;
+              }
+            }
+            @media(max-width:$breakpoint-xs-max) {
+                h2 {
+                    font-size:18px;
+                    margin-top: 10px;
+                }
+                h4 {
+                    font-size: 14px;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            transition: transform 1s ease-out;
+        }
+        &:hover img {
+            transform: scale(1.05, 1.05);
+        }
+    }
